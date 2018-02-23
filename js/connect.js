@@ -49,6 +49,8 @@
                     $('#form-deconnexion').slideDown(1000);
                 }
                 else {
+                    $('#presentation').fadeIn();
+                    $('#titre1').fadeIn();
                     $('#titre-connexion').fadeIn();
                     $('#form-connexion').slideDown(1000);
                 }
