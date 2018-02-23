@@ -1,8 +1,7 @@
-#titre1 {
+html {
     text-align: center;
 }
 
-#titre3 {
-    text-align: center;
+h3 {
     display: none;
 }
