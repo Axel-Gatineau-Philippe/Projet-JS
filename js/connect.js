@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    var titre1 = "<h3>Connectez-vous pour accèder au contenu !</h3>"
+    document.getElementById('AffTitre').innerHTML = resultat;
     $('#form-connexion').submit(function () {
         $.ajax({
             url: $(this).attr('action'),
@@ -11,6 +13,7 @@ $(document).ready(function () {
                     window.location.reload(true);
                 }
                 else {
+
                     console.log('Pas connecté');
                 }
             })
@@ -46,6 +49,7 @@ $(document).ready(function () {
                 $('#conteneur').slideDown(1000);
             }
             else {
+                $('#titre3').fadeIn();
                 $('#form-connexion').slideDown(1000);
             }
         }).fail(erreurCritique);

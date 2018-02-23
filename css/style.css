@@ -1,11 +1,8 @@
-html{
-    font-family: Arial;
-}
-
-.titre1 {
+#titre1 {
     text-align: center;
 }
 
-.titre3 {
+#titre3 {
     text-align: center;
+    display: none;
 }
