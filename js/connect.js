@@ -1,6 +1,5 @@
 $(document).ready(function () {
-    var titre1 = "<h3>Connectez-vous pour accèder au contenu !</h3>"
-    document.getElementById('AffTitre').innerHTML = resultat;
+
     $('#form-connexion').submit(function () {
         $.ajax({
             url: $(this).attr('action'),
