@@ -1,4 +1,11 @@
+html{
+    font-family: Arial;
+}
+
 .titre1 {
     text-align: center;
-    font-family: Arial;
+}
+
+.titre3 {
+    text-align: center;
 }

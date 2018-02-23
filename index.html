@@ -15,18 +15,28 @@
 </head>
     <body>
     <!-- Add your site or application content here -->
-        <div class="titre1">
+    <nav>
+        <ul>Partenaires e-Rated</ul>
+    </nav>
+    <div class="titre1">
             <h1>Bienvenue sur e-Rated Music</h1>
         </div>
 
-        <p>e-Rated Music propose à ses utilisateurs de noter les dernières sortie que musiques par type sur cinq étoiles, avec la possibilité de laisser son avis.</p>
+        </br>
+        <p>e-Rated Music propose à ses utilisateurs de noter les dernières sortie que musiques par type sur cinq étoiles, avec la possibilité de laisser son avis. Bonne visite du site !</p>
 
-        <h3>Connectez-vous pour accèder au contenu !</h3>
+        <div class="titre3">
+            <h3>Connectez-vous pour accèder au contenu !</h3>
+        </div>
 
-        <form style="display:none" id="form-connexion" method="post" action="json/connexion.php">
-            <input type="text" name="username"/>
+
+        <form style="display:none; text-align: center;" id="form-connexion" method="post" action="json/connexion.php">
             <br/>
-            <input type="password" name="pass"/>
+            <input type="text" name="username" value="Utilisateur" onfocus="this.value=''"/>
+            <br/>
+            <br/>
+            <input type="password" name="pass" value="Mot de passe" onfocus="this.value=''"/>
+            <br/>
             <br/>
             <input type="submit" value="Envoyer"/>
             <br/>
@@ -47,6 +57,7 @@
         <script src="js/vendor/jquery-3.2.1.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/connect.js"></script>
 
 
     </body>
