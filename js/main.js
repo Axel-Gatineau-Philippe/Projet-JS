@@ -21,15 +21,6 @@
         'font-size' : '45px'
     };
 
-    let css_blanc = {
-        'background-color': 'white',
-        'color': 'black'
-    };
-
-    let css_noir = {
-        'background-color': 'black',
-        'color': 'white'
-    };
 
     $(document).ready(function () {
         $('#form-connexion').submit(function () {
@@ -83,21 +74,7 @@
                 }
             }).fail(erreurCritique);
 
-        new Damier(3, 3, '#conteneur');
 
-        $('.case-blanche').css(css_commun).css(css_blanc).hover(
-            surbrillance,
-            function() {
-                $(this).css(css_commun).css(css_blanc);
-            }
-        );
-
-        $('.case-noire').css(css_commun).css(css_noir).hover( // 1er parametre : quand on entre, 2e : quand on sort
-            surbrillance, // et pas surbrillance()
-            function() {
-                $(this).css(css_commun).css(css_noir);
-            }
-        );
     });
 
 }) ();

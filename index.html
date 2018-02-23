@@ -11,38 +11,43 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<!-- Add your site or application content here -->
-<h1><b>Bienvenue sur e-Rated Music</b></h1>
+    <body>
+    <!-- Add your site or application content here -->
+        <div class="titre1">
+            <h1>Bienvenue sur e-Rated Music</h1>
+        </div>
 
-<form style="display:none" id="form-connexion" method="post" action="json/connexion.php">
-    <input type="text" name="username"/>
-    <br/>
-    <input type="password" name="pass"/>
-    <br/>
-    <input type="submit" value="Envoyer"/>
-    <br/>
+        <p>e-Rated Music propose à ses utilisateurs de noter les dernières sortie que musiques par type sur cinq étoiles, avec la possibilité de laisser son avis.</p>
 
-</form>
+        <h3>Connectez-vous pour accèder au contenu !</h3>
 
-<div id="conteneur" style="display: none; text-align:center">
-    <table id="damier"></table>
-</div>
+        <form style="display:none" id="form-connexion" method="post" action="json/connexion.php">
+            <input type="text" name="username"/>
+            <br/>
+            <input type="password" name="pass"/>
+            <br/>
+            <input type="submit" value="Envoyer"/>
+            <br/>
 
-</div>
- <br/>
-<form style="display:none" id="form-deconnexion" method="post" action="json/deconnexion.php">
-    <input type="submit" value="Se déconnecter" />
-</form>
+        </form>
 
-<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="js/vendor/jquery-3.2.1.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+        <div id="conteneur" style="display: none; text-align:center">
+            <table id="damier"></table>
+        </div>
 
 
-</body>
+         <br/>
+        <form style="display:none" id="form-deconnexion" method="post" action="json/deconnexion.php">
+            <input type="submit" value="Se déconnecter" />
+        </form>
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+
+    </body>
 </html>
