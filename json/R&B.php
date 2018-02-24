@@ -5,5 +5,5 @@
  * Date: 23/02/2018
  * Time: 23:04
  */
-
-echo 'Test';
+ session_start();
+ ?>
