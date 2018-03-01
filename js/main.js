@@ -12,35 +12,13 @@
         }).done(function (data) {
             if (data.est_connecte) {
                 $('#form-deconnexion').slideDown(1000);
-                $('#RB').fadeIn();
-                $('#Rock').fadeIn();
-                $('#Reggae').fadeIn();
-                $('#Jazz').fadeIn();
-                $('#HipHop').fadeIn();
+                $('.selection-categorie').fadeIn();
 
                 $.ajax({
                     'url': '/json/est_connecte.php'
-                }).done(function (data) {
-                    /* data doit ressembler à :
-                       {'musiques': [
-                           {
-                                "titre": "je marche seul",
-                                "artiste": "jj gold"
-                                "publication": "EMI"
-                                "type": "populaire"
-                           },
-                           {
-                                "titr"je marche seul",
-                                "artiste": "jj gold"
-                                "publication": "EMI"
-                                "type": "populaire"
-                           },
-                        ]
-                       }
-                     */
-                    for (let i=0; i<data.musiques.length; i++) {
-                        let musique = data.musiques[i];
-                        // let m = new Musique(musique.titre, musique.artiste, ...)
+                }).done(function (resultat) {
+                    for (let i=0; i<resultat.length; ++i) {
+                        console.log(resultat[i]);
                     }
 
                 }).fail(erreurCritique);
