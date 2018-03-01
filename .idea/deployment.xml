@@ -5,7 +5,7 @@
       <paths name="ssh-projetjavascropt.alwaysdata.net">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/www" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

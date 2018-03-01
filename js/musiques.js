@@ -12,7 +12,7 @@ let Musique;
         let self = this;
     };
 
-    RB1 = new Musique("Rake it up", "Nicky Minaj", "2017", "R&B");
+    RB1 = new Musique("No Frauds", "Drake", "2017", "R&B");
 
     console.log(RB1);
 
