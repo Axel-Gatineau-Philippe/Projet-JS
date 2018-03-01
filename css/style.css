@@ -14,10 +14,11 @@ h1{
     display: none;
 }
 
-.musique {
-    visibility: visible;
-}
 
 .hide{
     display: none;
+}
+
+.show{
+    display: contents;
 }
