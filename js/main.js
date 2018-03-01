@@ -72,7 +72,7 @@
                 console.log('musiques=' + musiques);
                 for (let i=0; i<musiques.liste.length; ++i) {
                     let musique = musiques.liste[i];
-                    $('#musique').append(
+                    $('.musique').append(
                         $('<div />').append(musique.titre),
                         $('<div />').append(musique.artiste),
                         $('<div />').append(musique.date),
@@ -85,7 +85,7 @@
             $('#musique').toggleClass("show", function () {
             })
         })*/.click(function () {
-            $('#musique').toggleClass("hide", function () {
+            $('.musique').toggleClass("show", function () {
             });
         });
     });

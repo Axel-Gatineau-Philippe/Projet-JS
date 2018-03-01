@@ -15,10 +15,10 @@ h1{
 }
 
 
-.hide{
+.musique{
     display: none;
 }
 
 .show{
-    display: contents;
+    display: block;
 }
