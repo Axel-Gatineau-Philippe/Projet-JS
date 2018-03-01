@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a5239127-aa9c-47ac-a583-e989e1b29d1e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
-              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <caret line="20" column="68" lean-forward="false" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -246,7 +245,7 @@
       <workItem from="1519413345742" duration="260000" />
       <workItem from="1519418642439" duration="6126000" />
       <workItem from="1519470943360" duration="2203000" />
-      <workItem from="1519889327067" duration="13000000" />
+      <workItem from="1519889327067" duration="13016000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <created>1519380293497</created>
@@ -332,11 +331,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519900630333</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Affichage console">
+      <created>1519902701744</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1519902701744</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35934000" />
+    <option name="totallyTimeSpent" value="35950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="26" width="1690" height="1005" extended-state="6" />
@@ -806,7 +812,7 @@
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <caret line="20" column="68" lean-forward="false" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
           <folding />
         </state>
       </provider>

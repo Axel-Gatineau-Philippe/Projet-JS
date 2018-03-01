@@ -19,7 +19,6 @@
                     'url': '/json/est_connecte.php'
                 }).done(function (resultat) {
                     for (let i=0; i<resultat.musiques.length; ++i) {
-                        $('.selection-categorie').data.resultat.musiques[i].append($('<h3>').append(resultat.musiques.titre));
 
                     }
 
