@@ -2,9 +2,9 @@
 
 class Bd extends PDO {
     public function __construct() {
-        $dsn = 'mysql:dbname=projetjavascropt_projet;host=mysql-projetjavascropt.alwaysdata.net';
-        $user = '153747';
-        $pw = 'calacuccia2b';
+        $dsn = 'mysql:dbname=projetjsaxel_projet; host=mysql-projetjsaxel.alwaysdata.net';
+        $user = '154109';
+        $pw = 'axelprojet';
         try {
             parent::__construct($dsn, $user, $pw);
             $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

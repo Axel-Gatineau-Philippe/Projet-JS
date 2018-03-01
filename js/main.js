@@ -30,7 +30,7 @@
                                 "type": "populaire"
                            },
                            {
-                                "titre": "je marche seul",
+                                "titr"je marche seul",
                                 "artiste": "jj gold"
                                 "publication": "EMI"
                                 "type": "populaire"

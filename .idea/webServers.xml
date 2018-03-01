@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="dc9472e6-00d4-4ddb-97d8-e319a9af9e5a" name="ssh-projetjavascropt.alwaysdata.net" url="http://ssh-projetjavascropt.alwaysdata.net">
-        <fileTransfer host="ssh-projetjavascropt.alwaysdata.net" port="22" rootFolder="/home/projetjavascropt/www" accessType="SFTP">
+      <webServer id="ea421f50-5a9d-4e9b-97f7-7000d1ada265" name="ssh-projetjsaxel.alwaysdata.net" url="http://ssh-projetjsaxel.alwaysdata.net">
+        <fileTransfer host="ssh-projetjsaxel.alwaysdata.net" port="22" rootFolder="/home/projetjsaxel/www" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
