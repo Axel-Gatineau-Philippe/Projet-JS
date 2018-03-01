@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="65fc9551-3f55-4375-a18b-fdcdf284898c" name="ssh-projetjsaxel.alwaysdata.net" url="http://ssh-projetjsaxel.alwaysdata.net">
-        <fileTransfer host="ssh-projetjsaxel.alwaysdata.net" port="22" accessType="SFTP">
+        <fileTransfer host="ssh-projetjsaxel.alwaysdata.net" port="22" rootFolder="/home/projetjsaxel/www" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

@@ -13,3 +13,11 @@ h1{
 #presentation {
     display: none;
 }
+
+.musique {
+    visibility: visible;
+}
+
+.hide{
+    display: none;
+}
