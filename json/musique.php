@@ -25,6 +25,7 @@ if (isset($_POST['id_categorie'])){
 
     while ($ligne = $stmt->fetch(PDO::FETCH_OBJ)) {
         $obj = new stdClass();
+        $obj->id = $ligne->id;
         $obj->titre = $ligne->titre;
         $obj->artiste = $ligne->artiste;
         $obj->date = $ligne->date;
