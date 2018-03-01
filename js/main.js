@@ -67,15 +67,16 @@
                 url: $(this).attr('action'),
                 method: $(this).attr('method'),
                 data: $(this).serialize()
-            }).done(function (resultat) {
+            }).done(function (musiques) {
 
-                console.log('resultat=' + resultat);
-                for (let i=0; i<resultat.musiques.length; ++i) {
-                    let musique = resultat.musiques[i];
+                console.log('musiques=' + musiques);
+                for (let i=0; i<musiques.liste.length; ++i) {
+                    let musique = musiques.liste[i];
                     $('#musique').append(
                         $('<div />').append(musique.titre),
                         $('<div />').append(musique.artiste),
-                        $('<div />').append(musique.date)
+                        $('<div />').append(musique.date),
+                        $('<div />').append(musique.genre)
                     );
                 }
             }).fail(erreurCritique);
