@@ -20,4 +20,24 @@ class fonctionBd {
         }
         return false;
     }
+
+    public static function connecterUtilisateur($mail,$mdp)
+    {
+        $bd = new Bd();
+        $sql = 'SELECT numeroUtilisateur, mdp FROM utilisateur WHERE mail LIKE :mail';
+        $stmt = $bd->prepare($sql);
+        if ($stmt->execute(array(':mail' => $mail)) && $resultat = $stmt->fetch())
+        {
+            if (password_verify($mdp, $resultat['mdp']))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
 }

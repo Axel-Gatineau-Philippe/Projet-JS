@@ -14,13 +14,13 @@ $data = new stdClass();
 
 $data->result = true;
 $data->message = '';
-$data->est_connecte = false;
+$data->est_inscrit = false;
 
 
 if(isset($_POST['nom']) || isset($_POST['prenom']) || isset($_POST['pass']) || isset($_POST['mail'])) {
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
-    $pass = $_POST['pass'];
+    $pass = md5($_POST['pass']);
     $mail = $_POST['mail'];
 
     if(fonctionBd::mailExistant($mail) == true){
@@ -36,6 +36,8 @@ if(isset($_POST['nom']) || isset($_POST['prenom']) || isset($_POST['pass']) || i
         $stmt->bindValue('Mail', $mail, PDO::PARAM_STR);
         $stmt->bindValue('Pass', $pass, PDO::PARAM_STR);
         $stmt->execute();
+
+        $data->est_inscrit = true;
 
         //Faire fonction qui confirme l'inscription avec envoi de mail + les messages qui s'affichent.
     }

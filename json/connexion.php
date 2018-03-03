@@ -18,19 +18,38 @@ $data->result = true;
 $data->message = '';
 $data->est_connecte = false;
 
-if (isset($_POST['username']) && isset($_POST['pass'])) {
+/*if (isset($_POST['username']) && isset($_POST['pass'])) {
     $mail = $_POST['mail'];
     $pass = $_POST['pass'];
 
-    if (fonctionBd::mailExistant($mail) == true) {
+    if (fonctionBd::connecterUtilisateur($mail, $pass) == true) {
         $data->est_connecte = true;
-        $_SESSION['id'] = '1';
+        $_SESSION['1'] = '1';
     }
     else {
         $data->est_connecte = false;
     }
 }
 else {
+    $data->result = false;
+    $data->message = 'Paramètres incorrects';
+}*/
+if (isset($_POST['username']) && isset($_POST['pass'])) {
+    $mail = $_POST['mail'];
+    $pass = $_POST['pass'];
+    $resultat = fonctionBd::connecterUtilisateur($mail, $pass);
+    session_start();
+    $_SESSION['NumeroUtilisateur'] = $resultat['numeroUtilisateur'];
+    $_SESSION['Nom'] = $resultat['nom'];
+    $_SESSION['Prenom'] = $resultat['prenom'];
+    $_SESSION['Mail'] = $resultat['mail'];
+    $_SESSION['Mdp'] = $resultat['mdp'];
+
+    $data->est_connecte = true;
+    $_SESSION['1'] = '1';
+}
+else {
+    $data->est_connecte = false;
     $data->result = false;
     $data->message = 'Paramètres incorrects';
 }
