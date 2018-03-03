@@ -21,14 +21,22 @@ $pass = $_POST['pass'];
 $mail = $_POST['mail'];
 
 
-if(isset($_POST['name']) || isset($_POST['firstname']) || isset($_POST['pass']) || isset($_POST['mail'])) {
-    $sql = 'INSERT INTO utilisateur(nom, prenom, mail, mdp) VALUES (:Nom, :Prenom, :Mail, :Pass)';
-    $stmt = $bd->prepare($sql);
-    $stmt->bindValue('Nom', $nom, PDO::PARAM_STR);
-    $stmt->bindValue('Prenom', $prenom, PDO::PARAM_STR);
-    $stmt->bindValue('Mail', $mail, PDO::PARAM_STR);
-    $stmt->bindValue('Pass', $pass, PDO::PARAM_STR);
-    $stmt->execute();
+if(isset($_POST['nom']) || isset($_POST['prenom']) || isset($_POST['pass']) || isset($_POST['mail'])) {
+    if(fonctionBd::mailExistant($mail) == true){
+        $data->est_inscrit = false;
+        $data->result = false;
+        $data->message = 'L\'utilsisateur existe déjà';
+    }
+    else {
+        $sql = 'INSERT INTO utilisateur(nom, prenom, mail, mdp) VALUES (:Nom, :Prenom, :Mail, :Pass)';
+        $stmt = $bd->prepare($sql);
+        $stmt->bindValue('Nom', $nom, PDO::PARAM_STR);
+        $stmt->bindValue('Prenom', $prenom, PDO::PARAM_STR);
+        $stmt->bindValue('Mail', $mail, PDO::PARAM_STR);
+        $stmt->bindValue('Pass', $pass, PDO::PARAM_STR);
+        $stmt->execute();
+    }
+
 }
 else {
 

@@ -13,5 +13,6 @@ class Bd extends PDO {
             echo 'Connection failed: ' . $e->getMessage();;
         }
     }
+
 }
 $bd = new Bd();
