@@ -32,12 +32,12 @@
             })
                 .done(function (data) {
                     console.log('data=' + data);
-                    if (data.est_connecte === true) {
+                    if (data.est_inscrit === true) {
                         window.location.reload(true);
                     }
                     else {
 
-                        console.log('Pas connecté');
+                        console.log('Non inscrit');
                     }
                 })
                 .fail(erreurCritique);

@@ -95,7 +95,7 @@
     <form id="form-inscription" method="post" action="json/inscription.php">
         <input type="text" name="firstname" value="Prénom" onfocus="this.value=''"/>
         <br/>
-        <br/>
+        <br/>first
         <input type="text" name="name" value="Nom" onfocus="this.value=''"/>
         <br/>
         <br/>

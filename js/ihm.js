@@ -1,4 +1,5 @@
 let affichForm;
+let errorMsg;
 
 (function () {
     "use-strict"
@@ -11,6 +12,10 @@ let affichForm;
         else {
             form.style.display = "none";
         }
+    }*/
+    
+    /*errorMsg = function () {
+        alert('Erreur dans le formulaire')
     }*/
 
 })();
