@@ -93,10 +93,10 @@
 
 <div class="inscription">
     <form id="form-inscription" method="post" action="json/inscription.php">
-        <input type="text" name="firstname" value="Prénom" onfocus="this.value=''"/>
+        <input type="text" name="prenom" value="Prénom" onfocus="this.value=''"/>
         <br/>
-        <br/>first
-        <input type="text" name="name" value="Nom" onfocus="this.value=''"/>
+        <br/>
+        <input type="text" name="nom" value="Nom" onfocus="this.value=''"/>
         <br/>
         <br/>
         <input type="text" name="mail" value="Mail" onfocus="this.value=''"/>

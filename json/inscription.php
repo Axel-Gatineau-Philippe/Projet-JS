@@ -15,26 +15,26 @@ $data->result = true;
 $data->message = '';
 $data->est_connecte = false;
 
-$name = $_POST['name'];
-$firstname = $_POST['firstname'];
+$nom = $_POST['nom'];
+$prenom = $_POST['prenom'];
 $pass = $_POST['pass'];
 $mail = $_POST['mail'];
 
 
-if(empty($_POST['name']) || empty($_POST['firstname']) || empty($_POST['pass']) || empty($_POST['mail'])) {
+if(isset($_POST['name']) || isset($_POST['firstname']) || isset($_POST['pass']) || isset($_POST['mail'])) {
+    $sql = 'INSERT INTO utilisateur(nom, prenom, mail, mdp) VALUES (:Nom, :Prenom, :Mail, :Pass)';
+    $stmt = $bd->prepare($sql);
+    $stmt->bindValue('Nom', $nom, PDO::PARAM_STR);
+    $stmt->bindValue('Prenom', $prenom, PDO::PARAM_STR);
+    $stmt->bindValue('Mail', $mail, PDO::PARAM_STR);
+    $stmt->bindValue('Pass', $pass, PDO::PARAM_STR);
+    $stmt->execute();
+}
+else {
+
     $data->est_inscrit = false;
     $data->result = false;
     $data->message = 'Paramètres incorrects';
-}
-else {
-    $sql = 'INSERT INTO `utilisateur`(`nom`, `prenom`, `mail`, `mdp`) VALUES (:nom, :prenom, :mail, :mdp)';
-    $stmt = $bd->prepare($sql);
-    $stmt->bindValue('name', $name, PDO::PARAM_STR);
-    $stmt->bindValue('firstname', $name, PDO::PARAM_STR);
-    $stmt->bindValue('pass', $name, PDO::PARAM_STR);
-    $stmt->bindValue('mail', $name, PDO::PARAM_STR);
-    $stmt->execute();
-
 
 }
 
