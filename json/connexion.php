@@ -6,6 +6,8 @@
  * Time: 13:53
  */
 
+require_once 'fonctionBd.php';
+
 session_start();
 // Utilisation de $_SESSION[]
 
@@ -17,12 +19,12 @@ $data->message = '';
 $data->est_connecte = false;
 
 if (isset($_POST['username']) && isset($_POST['pass'])) {
-    $username = $_POST['username'];
-    $pass     = $_POST['pass'];
+    $mail = $_POST['mail'];
+    $pass = $_POST['pass'];
 
-    if ($username === 'user' && $pass === 'pass') {
+    if (fonctionBd::mailExistant($mail) == true) {
         $data->est_connecte = true;
-        $_SESSION['id'] = '123';
+        $_SESSION['id'] = '1';
     }
     else {
         $data->est_connecte = false;

@@ -28,16 +28,43 @@
 <h3 id="titre-connexion">Authentifiez vous :</h3><br/>
 
 <form style="display:none; text-align: center;" id="form-connexion" method="post" action="json/connexion.php"><br/>
-    <input type="text" name="username" value="Utilisateur" onfocus="this.value=''"/>
+    <input type="text" name="mail" value="eMail" onfocus="this.value=''"/>
     <br/>
     <br/>
     <input type="password" name="pass" value="Mot de passe" onfocus="this.value=''"/>
     <br/>
     <br/>
-    <input type="submit" value="Envoyer" onclick=""/>
+    <input type="submit" value="Connexion" onclick=""/>
     <br/>
 
 </form>
+
+<br/>
+
+<form style="display:none" class="affichForm">
+    <input type="button" value="S'inscrire" />
+</form>
+
+<div class="inscription">
+    <form id="form-inscription" method="post" action="json/inscription.php">
+        <input type="text" name="prenom" value="Prénom" onfocus="this.value=''"/>
+        <br/>
+        <br/>
+        <input type="text" name="nom" value="Nom" onfocus="this.value=''"/>
+        <br/>
+        <br/>
+        <input type="text" name="mail" value="eMail" onfocus="this.value=''"/>
+        <br/>
+        <br/>
+        <input type="password" name="pass" value="Mot de passe" onfocus="this.value=''"/>
+        <br/>
+        <br/>
+        <input type="submit" value="Valider"/>
+        <br/>
+    </form>
+</div>
+
+<br/>
 
 <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
     <input type="hidden" name="id_categorie" value="rap">
@@ -85,33 +112,6 @@
 <div class="musique">
 
 </div>
-
-<!--<button onclick="affichForm('inscription');">S'inscrire</button>-->
-<form style="display:none" class="affichForm">
-    <input type="button" value="S'inscrire" />
-</form>
-
-<div class="inscription">
-    <form id="form-inscription" method="post" action="json/inscription.php">
-        <input type="text" name="prenom" value="Prénom" onfocus="this.value=''"/>
-        <br/>
-        <br/>
-        <input type="text" name="nom" value="Nom" onfocus="this.value=''"/>
-        <br/>
-        <br/>
-        <input type="text" name="mail" value="Mail" onfocus="this.value=''"/>
-        <br/>
-        <br/>
-        <input type="password" name="pass" value="Mot de passe" onfocus="this.value=''"/>
-        <br/>
-        <br/>
-        <input type="submit" value="Valider"/>
-        <br/>
-    </form>
-</div>
-
-<br/>
-
 
 <br/>
 

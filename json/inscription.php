@@ -16,13 +16,13 @@ $data->result = true;
 $data->message = '';
 $data->est_connecte = false;
 
-$nom = $_POST['nom'];
-$prenom = $_POST['prenom'];
-$pass = $_POST['pass'];
-$mail = $_POST['mail'];
-
 
 if(isset($_POST['nom']) || isset($_POST['prenom']) || isset($_POST['pass']) || isset($_POST['mail'])) {
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $pass = $_POST['pass'];
+    $mail = $_POST['mail'];
+
     if(fonctionBd::mailExistant($mail) == true){
         $data->est_inscrit = false;
         $data->result = false;
