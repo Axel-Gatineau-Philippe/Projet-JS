@@ -86,24 +86,29 @@
 
 </div>
 
-<button onclick="affichForm();">Je veux m'inscrire</button>
-
-<form id="form-inscription" style="display: none" method="post" action="json/connexion.php">>
-    <input type="text" name="firstname" value="Prénom" onfocus="this.value=''"/>
-    <br/>
-    <br/>
-    <input type="text" name="name" value="Nom" onfocus="this.value=''"/>
-    <br/>
-    <br/>
-    <input type="email" name="mail" value="Mail" onfocus="this.value=''"/>
-    <br/>
-    <br/>
-    <input type="password" name="pass" value="Mot de passe" onfocus="this.value=''"/>
-    <br/>
-    <br/>
-    <input type="submit" value="S'inscrire"/>
-    <br/>
+<!--<button onclick="affichForm('inscription');">S'inscrire</button>-->
+<form style="display:none" class="affichForm">
+    <input type="button" value="S'inscrire" />
 </form>
+
+<div class="inscription">
+    <form id="form-inscription" method="post" action="json/inscription.php">
+        <input type="text" name="firstname" value="Prénom" onfocus="this.value=''"/>
+        <br/>
+        <br/>
+        <input type="text" name="name" value="Nom" onfocus="this.value=''"/>
+        <br/>
+        <br/>
+        <input type="email" name="mail" value="Mail" onfocus="this.value=''"/>
+        <br/>
+        <br/>
+        <input type="password" name="pass" value="Mot de passe" onfocus="this.value=''"/>
+        <br/>
+        <br/>
+        <input type="submit" value="Valider"/>
+        <br/>
+    </form>
+</div>
 
 <br/>
 

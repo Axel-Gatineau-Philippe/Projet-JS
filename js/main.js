@@ -20,8 +20,7 @@
                 $('#titre1').fadeIn();
                 $('#titre-connexion').fadeIn();
                 $('#form-connexion').slideDown(1000);
-                $('#form-inscription').slideDown(1000);
-                $('#inscription').slideDown(1000);
+                $('.affichForm').slideDown(1000);
             }
         }).fail(erreurCritique);
 
@@ -109,6 +108,12 @@
             $('.musique').toggleClass("show", function () {
             });
         });
+        
+        $('.affichForm').click(function () {
+            $('.inscription').toggleClass("show", function () {
+                
+            })
+        })
     });
 
 
