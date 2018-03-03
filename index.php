@@ -99,7 +99,7 @@
         <input type="text" name="name" value="Nom" onfocus="this.value=''"/>
         <br/>
         <br/>
-        <input type="email" name="mail" value="Mail" onfocus="this.value=''"/>
+        <input type="text" name="mail" value="Mail" onfocus="this.value=''"/>
         <br/>
         <br/>
         <input type="password" name="pass" value="Mot de passe" onfocus="this.value=''"/>
