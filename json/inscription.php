@@ -6,6 +6,7 @@
  * Time: 12:05
  */
 require_once 'bd.php';
+require_once 'fonctionBd.php';
 
 session_start();
 $data = new stdClass();
@@ -25,7 +26,7 @@ if(isset($_POST['nom']) || isset($_POST['prenom']) || isset($_POST['pass']) || i
     if(fonctionBd::mailExistant($mail) == true){
         $data->est_inscrit = false;
         $data->result = false;
-        $data->message = 'L\'utilsisateur existe déjà';
+        $data->message = 'alert(\'Utilisateur exsitant)';
     }
     else {
         $sql = 'INSERT INTO utilisateur(nom, prenom, mail, mdp) VALUES (:Nom, :Prenom, :Mail, :Pass)';
@@ -35,6 +36,8 @@ if(isset($_POST['nom']) || isset($_POST['prenom']) || isset($_POST['pass']) || i
         $stmt->bindValue('Mail', $mail, PDO::PARAM_STR);
         $stmt->bindValue('Pass', $pass, PDO::PARAM_STR);
         $stmt->execute();
+
+        //Faire fonction qui confirme l'inscription avec envoi de mail + les messages qui s'affichent.
     }
 
 }

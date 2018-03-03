@@ -36,7 +36,7 @@
                         window.location.reload(true);
                     }
                     else {
-
+                        alert('Utilisateur non inscrit ou déjà existant')
                         console.log('Non inscrit');
                     }
                 })

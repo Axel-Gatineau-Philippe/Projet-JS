@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5239127-aa9c-47ac-a583-e989e1b29d1e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/json/fonctionBd.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/json/bd.php" afterPath="$PROJECT_DIR$/json/bd.php" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change beforePath="$PROJECT_DIR$/json/inscription.php" afterPath="$PROJECT_DIR$/json/inscription.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,16 +90,16 @@
       <file leaf-file-name="inscription.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json/inscription.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            <state relative-caret-position="450">
+              <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
               <folding>
-                <marker date="1520101417940" expanded="true" signature="667:751" ph="INSERT INTO utilisateur... " />
+                <marker date="1520102001760" expanded="true" signature="700:784" ph="INSERT INTO utilisateur... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fonctionBd.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fonctionBd.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json/fonctionBd.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
@@ -122,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="252">
+              <caret line="38" column="71" lean-forward="false" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -174,11 +173,11 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/json/est_inscrit.php" />
         <option value="$PROJECT_DIR$/js/ihm.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/json/bd.php" />
-        <option value="$PROJECT_DIR$/json/inscription.php" />
         <option value="$PROJECT_DIR$/json/fonctionBd.php" />
+        <option value="$PROJECT_DIR$/json/inscription.php" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -301,7 +300,7 @@
       <workItem from="1519682130765" duration="81000" />
       <workItem from="1519932305683" duration="2728000" />
       <workItem from="1519937194284" duration="5265000" />
-      <workItem from="1520068024242" duration="14798000" />
+      <workItem from="1520068024242" duration="15224000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <created>1519380293497</created>
@@ -422,11 +421,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520099930101</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Inscription fonctionnelle">
+      <created>1520101687634</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1520101687634</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46498000" />
+    <option name="totallyTimeSpent" value="46924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -493,7 +499,8 @@
     <MESSAGE value="Inscription afficher cacher" />
     <MESSAGE value="Changement type" />
     <MESSAGE value="Inscriptions premiers test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inscriptions premiers test" />
+    <MESSAGE value="Inscription fonctionnelle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inscription fonctionnelle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -761,14 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/json/bd.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -779,10 +778,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/json/inscription.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        <state relative-caret-position="450">
+          <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
           <folding>
-            <marker date="1520101417940" expanded="true" signature="667:751" ph="INSERT INTO utilisateur... " />
+            <marker date="1520102001760" expanded="true" signature="700:784" ph="INSERT INTO utilisateur... " />
           </folding>
         </state>
       </provider>
@@ -794,6 +793,14 @@
           <folding>
             <marker date="1520101618518" expanded="true" signature="225:288" ph="SELECT numer... utilisateur" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="38" column="71" lean-forward="false" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
