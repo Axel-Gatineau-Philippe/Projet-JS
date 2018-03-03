@@ -75,6 +75,7 @@
 </form>
 <br/>
 
+
 <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
     <input type="hidden" name="id_categorie" value="humour">
     <input type="submit" value="Catégorie Humour" />
@@ -85,10 +86,36 @@
 
 </div>
 
-<br/>
-<form style="display:none" id="form-deconnexion" method="post" action="json/deconnexion.php">
-    <input type="submit" value="Se déconnecter" />
+<button onclick="affichForm();">Je veux m'inscrire</button>
+
+<form id="form-inscription" style="display: none" method="post" action="json/connexion.php">>
+    <input type="text" name="firstname" value="Prénom" onfocus="this.value=''"/>
+    <br/>
+    <br/>
+    <input type="text" name="name" value="Nom" onfocus="this.value=''"/>
+    <br/>
+    <br/>
+    <input type="email" name="mail" value="Mail" onfocus="this.value=''"/>
+    <br/>
+    <br/>
+    <input type="password" name="pass" value="Mot de passe" onfocus="this.value=''"/>
+    <br/>
+    <br/>
+    <input type="submit" value="S'inscrire"/>
+    <br/>
 </form>
+
+<br/>
+
+
+<br/>
+
+
+<form id="form-deconnexion" style="display: none;" method="post" action="json/deconnexion.php">
+    <input type="submit" value="Se déconnecter" onclick=""/>
+</form>
+
+
 
 
 
@@ -96,7 +123,7 @@
 <script src="js/vendor/jquery-3.2.1.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-
+<script type="text/javascript" src="js/ihm.js"></script>
 
 
 </body>

@@ -20,8 +20,32 @@
                 $('#titre1').fadeIn();
                 $('#titre-connexion').fadeIn();
                 $('#form-connexion').slideDown(1000);
+                $('#form-inscription').slideDown(1000);
+                $('#inscription').slideDown(1000);
             }
         }).fail(erreurCritique);
+
+        $('.form-inscription').submit(function () {
+            $.ajax({
+                url: $(this).attr('action'),
+                method: $(this).attr('method'),
+                data: $(this).serialize()
+            })
+                .done(function (data) {
+                    console.log('data=' + data);
+                    if (data.est_connecte === true) {
+                        window.location.reload(true);
+                    }
+                    else {
+
+                        console.log('Pas connecté');
+                    }
+                })
+                .fail(erreurCritique);
+            return false;
+        })/*.click(function () {
+            $('.inscription').toggleClass("show", function () {
+            });*/
 
 
         $('#form-connexion').submit(function () {
@@ -81,10 +105,7 @@
                 }
             }).fail(erreurCritique);
             return false;
-        })/*.click(function () {
-            $('#musique').toggleClass("show", function () {
-            })
-        })*/.click(function () {
+        }).click(function () {
             $('.musique').toggleClass("show", function () {
             });
         });
