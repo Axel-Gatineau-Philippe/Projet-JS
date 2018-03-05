@@ -10,7 +10,6 @@ require_once 'fonctionBd.php';
 
 session_start();
 $data = new stdClass();
-// Classe la plus haute en PHP
 
 $data->result = true;
 $data->message = '';

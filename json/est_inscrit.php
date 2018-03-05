@@ -1,8 +1,13 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Axel1
+ * Date: 03/03/2018
+ * Time: 12:06
+ */
 session_start();
 
 $data = new stdClass();
-// Classe la plus haute en PHP
 
 $data->result = true;
 $data->message = '';
@@ -14,8 +19,6 @@ if (isset($_SESSION['id'])) {
 }else {
     $data->message = 'Non inscrit';
 }
-
-// Renvoyer les données pour affichage / JSON
 
 header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');

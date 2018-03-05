@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: g16006159
+ * Date: 20/02/18
+ * Time: 13:54
+ */
 session_start();
 
 $data = new stdClass();
@@ -14,8 +20,6 @@ if (isset($_SESSION['id'])) {
 }else {
     $data->message = 'Pas connecté';
 }
-
-// Renvoyer les données pour affichage / JSON
 
 header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
