@@ -98,7 +98,7 @@
 
 <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
     <input type="hidden" name="id_categorie" value="hiphop">
-    <input type="submit" class="hiphopkButton" value="Catégorie HipHop" />
+    <input type="submit" class="hiphopButton" />
 </form>
 <br/>
 

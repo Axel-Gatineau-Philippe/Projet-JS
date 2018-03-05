@@ -27,3 +27,18 @@ h1{
     display: block;
 }
 
+.hiphopButton{
+    background:url("https://image.noelshack.com/fichiers/2018/10/1/1520281215-large.jpg");
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.rockButton{
+    background:url("https://image.noelshack.com/fichiers/2018/10/1/1520283920-texte-en-flex-thermocollant-rock.jpg");
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+

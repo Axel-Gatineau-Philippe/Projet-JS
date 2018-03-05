@@ -100,18 +100,19 @@
                         $('<div />').append(musique.artiste),
                         $('<div />').append(musique.date),
                         $('<div />').append(musique.genre)
-                    )
+                    );
                 }
             }).fail(erreurCritique);
             return false;
         }).click(function () {
             $('.musique').toggleClass("show", function () {
+                $('.musique').removeChild('<div />');
             });
         });
-        
+
         $('.affichForm').click(function () {
             $('.inscription').toggleClass("show", function () {
-                
+
             })
         })
     });
