@@ -94,19 +94,22 @@
 
                 console.log('musiques=' + musiques);
                 for (let i=0; i<musiques.liste.length; ++i) {
-                    let musique = musiques.liste[i];
-                    $('.musique').append(
-                        $('<div />').append(musique.titre),
-                        $('<div />').append(musique.artiste),
-                        $('<div />').append(musique.date),
-                        $('<div />').append(musique.genre)
-                    );
+                    if(i < 2 ){
+                        let musique = musiques.liste[i];
+                        $('.musique').append(
+                            $('<div />').append(musique.titre),
+                            $('<div />').append(musique.artiste),
+                            $('<div />').append(musique.date),
+                            $('<div />').append(musique.genre)
+
+                        )
+                    }
+
                 }
             }).fail(erreurCritique);
             return false;
         }).click(function () {
             $('.musique').toggleClass("show", function () {
-                $('.musique').removeChild('<div />');
             });
         });
 

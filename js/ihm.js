@@ -1,5 +1,6 @@
 let affichForm;
 let errorMsg;
+let removeChild;
 
 (function () {
     "use-strict"
@@ -17,5 +18,9 @@ let errorMsg;
     /*errorMsg = function () {
         alert('Erreur dans le formulaire')
     }*/
+
+    removeChild = function () {
+        $('<div />').remove();
+    }
 
 })();

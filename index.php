@@ -68,13 +68,13 @@
 
 <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
     <input type="hidden" name="id_categorie" value="rap">
-    <input type="submit" class="rapButton" value="Catégorie Rap" />
+    <input type="submit" class="rapButton" value="" />
 </form>
 <br/>
 
 <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
     <input type="hidden" name="id_categorie" value="rock">
-    <input type="submit" class="rockButton" value="Catégorie Rock" />
+    <input type="submit" class="rockButton" value="" />
 </form>
 
 <br/>
@@ -82,7 +82,7 @@
 
 <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
     <input type="hidden" name="id_categorie" value="reggae">
-    <input type="submit" class="reggaeButton" value="Catégorie Reggae" />
+    <input type="submit" class="reggaeButton" value="" />
 </form>
 
 <br/>
@@ -90,7 +90,7 @@
 
 <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
     <input type="hidden" name="id_categorie" value="jazz">
-    <input type="submit" class="jazzButton" value="Catégorie Jazz" />
+    <input type="submit" class="jazzButton" value="" />
 </form>
 
 <br/>
@@ -98,14 +98,14 @@
 
 <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
     <input type="hidden" name="id_categorie" value="hiphop">
-    <input type="submit" class="hiphopButton" />
+    <input type="submit" class="hiphopButton" value=""/>
 </form>
 <br/>
 
 
 <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
     <input type="hidden" name="id_categorie" value="humour">
-    <input type="submit" class="humourButton" value="Catégorie Humour" />
+    <input type="submit" class="humourButton" value="" />
 </form>
 <br/>
 
