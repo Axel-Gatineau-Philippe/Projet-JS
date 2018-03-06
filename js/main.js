@@ -15,7 +15,7 @@
             for (let i=0; i<musiques.liste.length; ++i) {
                 let musique = musiques.liste[i];
                 $('.musique').append(
-                    $('<h1> <h1/>').append(musique.genre)
+                    $('<h1> <h1/>').append(musique.genre),
                     $('<h3 </h3>').append(musique.titre),
                     $('<h5 </h5>').append(musique.artiste),
                     $('<div />').append(musique.date),

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5239127-aa9c-47ac-a583-e989e1b29d1e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/json/avis.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/js/ihm.js" afterPath="$PROJECT_DIR$/js/ihm.js" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/json/musique.php" afterPath="$PROJECT_DIR$/json/musique.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +17,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="144">
+              <caret line="17" column="58" lean-forward="false" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -240,7 +235,7 @@
       <workItem from="1519937194284" duration="5265000" />
       <workItem from="1520068024242" duration="17927000" />
       <workItem from="1520245447744" duration="6037000" />
-      <workItem from="1520352580297" duration="10464000" />
+      <workItem from="1520352580297" duration="10527000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <created>1519380293497</created>
@@ -410,11 +405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520354162109</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Correction du code, affichage en dur">
+      <created>1520366179882</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1520366179882</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66128000" />
+    <option name="totallyTimeSpent" value="66191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -488,7 +490,8 @@
     <MESSAGE value="Connexion fonctionnelle" />
     <MESSAGE value="Faire image cliquable + s'occuper des image et des divs qui se créent" />
     <MESSAGE value=" + s'occuper des image et des divs qui se créent" />
-    <option name="LAST_COMMIT_MESSAGE" value=" + s'occuper des image et des divs qui se créent" />
+    <MESSAGE value="Correction du code, affichage en dur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction du code, affichage en dur" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -822,8 +825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="144">
+          <caret line="17" column="58" lean-forward="false" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
           <folding />
         </state>
       </provider>
