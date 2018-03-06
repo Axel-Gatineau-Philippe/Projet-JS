@@ -139,7 +139,19 @@
             });
         });*/
 
-
+        $('.form-avis').submit(function () {
+            $.ajax({
+                url: $(this).attr('action'),
+                method: $(this).attr('method'),
+                data: $(this).serialize()
+            }).done(function (avis) {
+                alert('Votre avis à été envoyé');
+            }).fail(erreurCritique);
+            return false;
+        }).click(function () {
+            $('.musique').toggleClass("show", function () {
+            });
+        })
 
         $('.affichForm').click(function () {
             $('.inscription').toggleClass("show", function () {

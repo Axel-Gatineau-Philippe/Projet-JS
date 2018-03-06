@@ -120,7 +120,7 @@
 
 <br/>
 
-<!-- $Mettre un bouton submit "donner son avis"-->
+<!-- $Mettre un bouton submit "donner son avis", quando n clique dessus ca fit disparaitre les autre set seul l'article ou la catégorie est selectioné reste et en suite quand l'avis est donné, on revient sur la page-->
 
 <form style="display:none" class="form-avis" method="post" action="json/avis.php">
     <select id="categorieChoisi" name="categorieChoisi">

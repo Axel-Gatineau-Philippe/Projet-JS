@@ -22,7 +22,7 @@ if (isset($_POST['avisText']) && isset($_POST['categorieChoisi'])){
 
     $sql = '';
     $stmt = $bd->prepare($sql);
-    $stmt->execute(array(':genre' => $categorie));
+    $stmt->execute(array());
 
 }
 
