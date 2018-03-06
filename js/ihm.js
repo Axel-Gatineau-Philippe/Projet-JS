@@ -19,8 +19,5 @@ let removeChild;
         alert('Erreur dans le formulaire')
     }*/
 
-    removeChild = function () {
-        $('<div />').remove();
-    }
 
 })();

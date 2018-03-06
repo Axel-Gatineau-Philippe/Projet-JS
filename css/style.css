@@ -27,51 +27,46 @@ h1{
     display: block;
 }
 
-.hiphopButton{
+/*.hiphopButton{
     background:url("https://image.noelshack.com/fichiers/2018/10/2/1520353611-28907212-2087038297980906-1327169209-n.jpg");
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     text-align: center;
-    display: inline-block;
 }
 
 .rockButton{
     background:url("https://image.noelshack.com/fichiers/2018/10/2/1520353611-texte-en-flex-thermocollant-rock.jpg");
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     text-align: center;
-    display: inline-block;
 }
 
 .humourButton{
     background:url("https://image.noelshack.com/fichiers/2018/10/2/1520353611-28537846-2087038321314237-1437428219-n.png");
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     text-align: center;
-    display: inline-block;
 }
 
 .rapButton{
     background:url("https://image.noelshack.com/fichiers/2018/10/2/1520353611-28537732-2087038314647571-1551823770-n.jpg");
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     text-align: center;
-    display: inline-block;
 }
 
 .jazzButton{
     background:url("https://image.noelshack.com/fichiers/2018/10/2/1520353611-28741700-2087038294647573-783319240-n.jpg");
-    width: 300px;
-    height: 300px;
-    margin-right: auto;
-    text-align: center;
-    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-position: center;
 }
 
 .reggaeButton{
     background:url("https://image.noelshack.com/fichiers/2018/10/2/1520353611-28537740-2087029444648458-1980529338-n.jpg");
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     display: inline-block;
-}
+}*/
+

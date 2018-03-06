@@ -16,8 +16,13 @@
 <body>
 <!-- Add your site or application content here -->
 <nav>
-
+    <form id="form-deconnexion" style="display: none;" method="post" action="json/deconnexion.php">
+        <input type="submit" value="Se déconnecter" onclick=""/>
+    </form>
 </nav>
+
+
+
 
 <h1 id="titre1">Bienvenue sur e-Rated Music</h1><br/>
 
@@ -66,7 +71,7 @@
 
 <br/>
 
-<form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
+<!--<form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
     <input type="hidden" name="id_categorie" value="rap">
     <input type="submit" class="rapButton" value="" />
 </form>
@@ -108,20 +113,32 @@
     <input type="submit" class="humourButton" value="" />
 </form>
 <br/>
-
+-->
 <div class="musique">
 
 </div>
 
 <br/>
 
+<!-- $Mettre un bouton submit "donner son avis"-->
 
-<form id="form-deconnexion" style="display: none;" method="post" action="json/deconnexion.php">
-    <input type="submit" value="Se déconnecter" onclick=""/>
+<form style="display:none" class="form-avis" method="post" action="json/avis.php">
+    <select id="categorieChoisi" name="categorieChoisi">
+        <option value="Rap">Rap</option>
+        <option value="Rock">Rock</option>
+        <option value="HipHop">Hip Hop</option>
+        <option value="Humour">Humour</option>
+        <option value="Jazz">Jazz</option>
+        <option value="Reggae">Reggae</option>
+    </select>
+    <br/>
+    <textarea name="avisText">
+    </textarea>
+    <br>
+    <p>Note sur 5 :</p>
+    <input type="radio" name="note" value="5"
+    <input type="submit" value="Envoyer" />
 </form>
-
-
-
 
 
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>

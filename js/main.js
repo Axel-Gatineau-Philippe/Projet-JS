@@ -2,8 +2,33 @@
     "use strict";
 
     let erreurCritique = function () {
-        $('body').html('Erreur critique<br/>' + 'Veuillez contacter <br/>' + "axel13" + "10.p" + "@" + (true ? 'gmail': '') + ".com");
+        $('body').html('Erreur !<br/>' + 'Veuillez contacter <br/>' + "axel13" + "10.p" + "@" + (true ? 'gmail': '') + ".com" + ' si le problème persiste.');
     };
+
+    let afficherArticles = function () {
+        $.ajax({
+            'url': '/json/musique.php'
+
+        }).done(function (musiques) {
+
+            console.log('musiques=' + musiques);
+            for (let i=0; i<musiques.liste.length; ++i) {
+                let musique = musiques.liste[i];
+                $('.musique').append(
+                    $('<h1> <h1/>').append(musique.genre)
+                    $('<h3 </h3>').append(musique.titre),
+                    $('<h5 </h5>').append(musique.artiste),
+                    $('<div />').append(musique.date),
+                    $('<div />').append(musique.note),
+                    $('<br/>')
+
+                )
+
+            }
+        }).fail(erreurCritique);
+        return false;
+    }
+
 
 
     $(document).ready(function () {
@@ -13,7 +38,10 @@
         }).done(function (data) {
             if (data.est_connecte) {
                 $('#form-deconnexion').slideDown(1000);
-                $('.selection-categorie').fadeIn();
+                //$('.selection-categorie').fadeIn();
+                $('.musique').fadeIn();
+                afficherArticles();
+                $('.form-avis').slideDown(1000);
             }
             else {
                 $('#presentation').fadeIn();
@@ -21,6 +49,7 @@
                 $('#titre-connexion').fadeIn();
                 $('#form-connexion').slideDown(1000);
                 $('.affichForm').slideDown(1000);
+
             }
         }).fail(erreurCritique);
 
@@ -42,10 +71,7 @@
                 })
                 .fail(erreurCritique);
             return false;
-        })/*.click(function () {
-            $('.inscription').toggleClass("show", function () {
-            });*/
-
+        });
 
         $('#form-connexion').submit(function () {
             $.ajax({
@@ -85,7 +111,7 @@
             return false;
         });
 
-        $('.selection-categorie').submit(function () {
+        /*$('.selection-categorie').submit(function () {
             $.ajax({
                 url: $(this).attr('action'),
                 method: $(this).attr('method'),
@@ -94,16 +120,16 @@
 
                 console.log('musiques=' + musiques);
                 for (let i=0; i<musiques.liste.length; ++i) {
-                    if(i < 2 ){
-                        let musique = musiques.liste[i];
-                        $('.musique').append(
-                            $('<div />').append(musique.titre),
-                            $('<div />').append(musique.artiste),
-                            $('<div />').append(musique.date),
-                            $('<div />').append(musique.genre)
+                    let musique = musiques.liste[i];
+                    $('.musique').append(
+                        $('<h3 </h3>').append(musique.titre),
+                        $('<h5 </h5>').append(musique.artiste),
+                        $('<div />').append(musique.date),
+                        $('<div />').append(musique.genre),
+                        $('<div />').append(musique.note),
+                        $('<br/>')
 
-                        )
-                    }
+                    )
 
                 }
             }).fail(erreurCritique);
@@ -111,7 +137,9 @@
         }).click(function () {
             $('.musique').toggleClass("show", function () {
             });
-        });
+        });*/
+
+
 
         $('.affichForm').click(function () {
             $('.inscription').toggleClass("show", function () {
@@ -123,3 +151,5 @@
 
 
 }) ();
+
+//APpel ajax avec formulaire d'avis en dur en fonction de la catégorie qui affiche en direct l'avis ensuite sur la page à l'image de slection catégorie
