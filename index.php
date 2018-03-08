@@ -143,8 +143,8 @@
         <input type="submit" value="Envoyer" />
     </form>
 </div>
-
-<button class="retour" onclick="window.reload(true">Retour</button>
+<!-- Eviter de recharger à l'avenir-->
+<button class="retour" onclick="window.location.reload(true)">Retour</button>
 
 
 
