@@ -165,22 +165,15 @@
             $('.avis').toggleClass("show", function () {
 
             });
-            $('.retour').toggleClass("show", function () {
 
-            });
             $('.musique').toggleClass("hide", function () {
                 
             });
+            $('.retour').toggleClass("show", function () {
+
+            });
         });
 
-        $('.retour').click(function () {
-            $('.avis').toggleClass("hide", function () {
-
-            });
-            $('.musique').toggleClass("show", function () {
-
-            });
-        })
     });
 
 

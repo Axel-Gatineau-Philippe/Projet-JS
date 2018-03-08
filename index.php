@@ -144,7 +144,7 @@
     </form>
 </div>
 
-<button class="retour">Retour</button>
+<button class="retour" onclick="window.reload(true">Retour</button>
 
 
 
