@@ -15,11 +15,13 @@
             for (let i=0; i<musiques.liste.length; ++i) {
                 let musique = musiques.liste[i];
                 $('.musique').append(
-                    $('<h1> <h1/>').append(musique.genre),
+                    $('<h1 <h1/>').append(musique.genre),
+                    $('<div />').append(musique.pochette),
                     $('<h3 </h3>').append(musique.titre),
                     $('<h5 </h5>').append(musique.artiste),
                     $('<div />').append(musique.date),
                     $('<div />').append(musique.note),
+                    $('<div />').append(musique.avis),
                     $('<br/>')
 
                 )
@@ -41,14 +43,16 @@
                 //$('.selection-categorie').fadeIn();
                 $('.musique').fadeIn();
                 afficherArticles();
-                $('.form-avis').slideDown(1000);
+                $('.affichFormAvis').slideDown(1000);
+                $('#form-avis').fadeIn();
             }
             else {
                 $('#presentation').fadeIn();
                 $('#titre1').fadeIn();
                 $('#titre-connexion').fadeIn();
                 $('#form-connexion').slideDown(1000);
-                $('.affichForm').slideDown(1000);
+                $('.affichFormInsc').slideDown(1000);
+
 
             }
         }).fail(erreurCritique);
@@ -139,24 +143,43 @@
             });
         });*/
 
-        $('.form-avis').submit(function () {
+        $('#form-avis').submit(function () {
             $.ajax({
                 url: $(this).attr('action'),
                 method: $(this).attr('method'),
                 data: $(this).serialize()
             }).done(function (avis) {
                 alert('Votre avis à été envoyé');
+                window.location.reload(true);
             }).fail(erreurCritique);
             return false;
-        }).click(function () {
-            $('.musique').toggleClass("show", function () {
-            });
-        })
+        });
 
-        $('.affichForm').click(function () {
+        $('.affichFormInsc').click(function () {
             $('.inscription').toggleClass("show", function () {
 
             })
+        });
+
+        $('.affichFormAvis').click(function () {
+            $('.avis').toggleClass("show", function () {
+
+            });
+            $('.retour').toggleClass("show", function () {
+
+            });
+            $('.musique').toggleClass("hide", function () {
+                
+            });
+        });
+
+        $('.retour').click(function () {
+            $('.avis').toggleClass("hide", function () {
+
+            });
+            $('.musique').toggleClass("show", function () {
+
+            });
         })
     });
 

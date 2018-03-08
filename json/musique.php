@@ -24,10 +24,12 @@ $stmt->execute();
 while ($ligne = $stmt->fetch(PDO::FETCH_OBJ)) {
     $obj = new stdClass();
     $obj->id = $ligne->id;
+    $obj->pochette = $ligne->pochette;
     $obj->titre = $ligne->titre;
     $obj->artiste = $ligne->artiste;
     $obj->date = $ligne->date;
     $obj->genre = $ligne->genre;
+    $obj->avis = $ligne->avis;
     $obj->note = $ligne->note;
 
     array_push($musiques->liste, $obj);

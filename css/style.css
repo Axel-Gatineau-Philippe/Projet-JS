@@ -2,20 +2,7 @@ html {
     text-align: center;
 }
 
-h3 {
-    display: none;
-}
-
-h1{
-    display: none;
-}
-
 #presentation {
-    display: none;
-}
-
-
-.musique{
     display: none;
 }
 
@@ -23,8 +10,20 @@ h1{
     display: none;
 }
 
+.avis{
+    display: none;
+}
+
+.retour{
+    display: none;
+}
+
 .show{
     display: block;
+}
+
+.hide{
+    display: none;
 }
 
 /*.hiphopButton{

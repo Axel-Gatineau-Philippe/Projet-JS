@@ -15,22 +15,32 @@
 </head>
 <body>
 <!-- Add your site or application content here -->
-<nav>
+
+<!-- Faire en sorte que le menu soit toujours présent et en haut de la page-->
+<nav class="menu">
     <form id="form-deconnexion" style="display: none;" method="post" action="json/deconnexion.php">
         <input type="submit" value="Se déconnecter" onclick=""/>
+    </form>
+
+    <form style="display:none" class="affichFormInsc">
+        <input type="button" value="S'inscrire" />
+    </form>
+
+    <form style="display:none" class="affichFormAvis">
+        <input type="button" value="Donnez votre avis !" />
     </form>
 </nav>
 
 
 
 
-<h1 id="titre1">Bienvenue sur e-Rated Music</h1><br/>
+<h1 style="display: none" id="titre1">Bienvenue sur e-Rated Music</h1><br/>
 
 <p id="presentation">e-Rated Music propose à ses utilisateurs de noter les dernières sortie que musiques par type sur cinq étoiles,
     avec la possibilité de laisser son avis.<br/>
     Bonne visite !</p>
 
-<h3 id="titre-connexion">Authentifiez vous :</h3><br/>
+<h3 style="display: none" id="titre-connexion">Authentifiez vous :</h3><br/>
 
 <form style="display:none; text-align: center;" id="form-connexion" method="post" action="json/connexion.php"><br/>
     <input type="text" name="mail" value="eMail" onfocus="this.value=''"/>
@@ -46,9 +56,6 @@
 
 <br/>
 
-<form style="display:none" class="affichForm">
-    <input type="button" value="S'inscrire" />
-</form>
 
 <div class="inscription">
     <form id="form-inscription" method="post" action="json/inscription.php">
@@ -120,25 +127,25 @@
 
 <br/>
 
-<!-- $Mettre un bouton submit "donner son avis", quando n clique dessus ca fit disparaitre les autre set seul l'article ou la catégorie est selectioné reste et en suite quand l'avis est donné, on revient sur la page-->
-
-<form style="display:none" class="form-avis" method="post" action="json/avis.php">
-    <select id="categorieChoisi" name="categorieChoisi">
-        <option value="Rap">Rap</option>
-        <option value="Rock">Rock</option>
-        <option value="HipHop">Hip Hop</option>
-        <option value="Humour">Humour</option>
-        <option value="Jazz">Jazz</option>
-        <option value="Reggae">Reggae</option>
-    </select>
-    <br/>
-    <textarea name="avisText">
+<div class="avis">
+    <form id="form-avis" method="post" action="json/avis.php">
+        <select id="categorieChoisi" name="categorieChoisi">
+            <option value="Rap">Rap</option>
+            <option value="Rock">Rock</option>
+            <option value="HipHop">Hip Hop</option>
+            <option value="Humour">Humour</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Reggaeton">Reggaeton</option>
+        </select>
+        <br/>
+        <textarea style="width: auto" name="avisText">
     </textarea>
-    <br>
-    <p>Note sur 5 :</p>
-    <input type="radio" name="note" value="5"
-    <input type="submit" value="Envoyer" />
-</form>
+        <input type="submit" value="Envoyer" />
+    </form>
+</div>
+
+<button class="retour">Retour</button>
+
 
 
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>

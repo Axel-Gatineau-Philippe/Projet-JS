@@ -14,16 +14,16 @@ $avis = new stdClass();
 
 $avis->result = true;
 $avis->message = '';
-$avis->liste = array();
 
 if (isset($_POST['avisText']) && isset($_POST['categorieChoisi'])){
     $avisText = $_POST['avisText'];
     $categorieChoisi = $_POST['categorieChoisi'];
 
-    $sql = '';
+    $sql = 'UPDATE musique SET avis = :avisText WHERE genre = :categorieChoisi';
     $stmt = $bd->prepare($sql);
-    $stmt->execute(array());
-
+    $stmt->bindValue('avisText', $avisText, PDO::PARAM_STR);
+    $stmt->bindValue('categorieChoisi', $categorieChoisi, PDO::PARAM_STR);
+    $stmt->execute();
 }
 
 // Renvoyer les données pour affichage / JSON
