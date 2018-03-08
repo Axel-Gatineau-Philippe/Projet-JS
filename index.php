@@ -142,6 +142,13 @@
     </textarea>
         <input type="submit" value="Envoyer" />
     </form>
+
+    <img id="Etoile1" src="https://image.noelshack.com/fichiers/2018/10/4/1520549429-starout.gif" />
+    <img id="Etoile2" src="https://image.noelshack.com/fichiers/2018/10/4/1520549429-starout.gif" />
+    <img id="Etoile3" src="https://image.noelshack.com/fichiers/2018/10/4/1520549429-starout.gif" />
+    <img id="Etoile4" src="https://image.noelshack.com/fichiers/2018/10/4/1520549429-starout.gif" />
+    <img id="Etoile5" src="https://image.noelshack.com/fichiers/2018/10/4/1520549429-starout.gif" />
+
 </div>
 <!-- Eviter de recharger à l'avenir-->
 <button class="retour" onclick="window.location.reload(true)">Retour</button>
