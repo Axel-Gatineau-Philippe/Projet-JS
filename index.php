@@ -129,6 +129,7 @@
 <!-- Pour récuperer les note en fonction de l'étoile, s'insipirer de selection catégorie-->
 <div class="avis">
     <form id="form-avis" method="post" action="json/avis.php">
+
         <ul class="noteEtoile">
             <li class="etoileEteinte">
                 <label for="note1">1</label>

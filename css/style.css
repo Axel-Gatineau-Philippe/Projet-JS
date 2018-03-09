@@ -9,14 +9,15 @@ html {
 ul.noteEtoile {
     margin: 0;
     padding: 0;
+
 }
 
 ul.noteEtoile li{
     list-style: none;
-    min-height: 20px;
-    min-height: 20px;
-    margin: 0;
-    padding: 0;
+    min-height: 40px;
+    min-height: 40px;
+    margin: auto;
+    padding: auto;
 }
 
 ul.noteEtoile li label {
@@ -29,6 +30,14 @@ ul.noteEtoile li label {
 
 ul.noteEtoile li.etoileEteinte label {
     background-position: center -60px;
+}
+
+ul.noteEtoile li.etoileCochee {
+    font-weight: bold;
+}
+
+ul.noteEtoile.allumer li.noteTabulee {
+    outline: 1px dotted #000000;
 }
 
 .radioBut{

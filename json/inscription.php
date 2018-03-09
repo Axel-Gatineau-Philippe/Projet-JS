@@ -25,7 +25,7 @@ if(isset($_POST['nom']) || isset($_POST['prenom']) || isset($_POST['pass']) || i
     if(fonctionBd::mailExistant($mail) == true){
         $data->est_inscrit = false;
         $data->result = false;
-        $data->message = 'alert(\'Utilisateur exsitant)';
+        $data->message = 'Utilisateur exsitant';
     }
     else {
         $sql = 'INSERT INTO utilisateur(nom, prenom, mail, mdp) VALUES (:Nom, :Prenom, :Mail, :Pass)';

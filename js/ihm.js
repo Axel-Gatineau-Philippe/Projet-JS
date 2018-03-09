@@ -11,19 +11,23 @@
         $("ul.noteEtoile li").mouseover(function () {
             $(this).nextAll("li").addClass("etoileEteinte");
             $(this).prevAll("li").removeClass("etoileEteinte");
-            $(this).removeClass("etoieEteinte");
+            $(this).removeClass("etoileEteinte");
         });
 
         $("ul.noteEtoile").mouseout(function () {
 
-            $(this).children("li").addClass("etoileEtinte");
+            $(this).children("li").addClass("etoileEteinte");
 
             $(this).find("li input:checked").parent("li").trigger("mouseover");
         });
 
         //Au clavier
-        $("ul.notes-echelle input")
+        /*$("ul.noteEtoile.radioBut")
             .focus(function() {
+                $(this).parents("ul.noteEtoile").find("li").removeClass("noteTabulee");
+
+                $(this).parent("li").addClass("noteTabulee");
+
                 $(this).parent("li").nextAll("li").addClass("etoileEteinte");
 
                 $(this).parent("li").prevAll("li").removeClass("etoileEteinte");
@@ -31,10 +35,20 @@
                 $(this).parent("li").removeClass("etoileEteinte");
             })
             .blur(function() {
+                $(this).parents("ul.noteEtoile").find("li").removeClass("noteTabulee");
+
                 if($(this).parents("ul.noteEtoile").find("li input:checked").length == 0) {
                     $(this).parents("ul.noteEtoile").find("li").addClass("etoileEteinte");
                 }
-            });
+            })
+            .click(function() {
+                $(this).parents("ul.noteEtoile").find("li").removeClass("noteCochee");
+                $(this).parent("li").addClass("noteCochee");
+            });*/
+
+        //Coché par défault
+        $('ul.noteEtoile input:checked').parent("li").trigger("mouseover");
+        $("ul.noteEtoile input:checked").trigger("click");
     })
 
 })();

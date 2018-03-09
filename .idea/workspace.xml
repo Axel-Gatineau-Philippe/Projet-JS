@@ -6,7 +6,7 @@
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change beforePath="$PROJECT_DIR$/js/ihm.js" afterPath="$PROJECT_DIR$/js/ihm.js" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/json/inscription.php" afterPath="$PROJECT_DIR$/json/inscription.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +32,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="134" column="40" lean-forward="false" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+            <state relative-caret-position="115">
+              <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
               <folding>
                 <element signature="e#2467#3845#0#HTML" expanded="false" />
               </folding>
@@ -44,9 +44,11 @@
       <file leaf-file-name="ihm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ihm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="471">
+              <caret line="50" column="58" lean-forward="true" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+              <folding>
+                <element signature="e#819#1809#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,7 +56,7 @@
       <file leaf-file-name="avis.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json/avis.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="282">
               <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding>
                 <marker date="1520428740063" expanded="true" signature="397:463" ph="UPDATE musique... " />
@@ -66,10 +68,10 @@
       <file leaf-file-name="inscription.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json/inscription.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="252">
+              <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
               <folding>
-                <marker date="1520246463111" expanded="true" signature="689:773" ph="INSERT INTO utilisateur... " />
+                <marker date="1520593128845" expanded="true" signature="680:764" ph="INSERT INTO utilisateur... " />
               </folding>
             </state>
           </provider>
@@ -78,11 +80,11 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            <state relative-caret-position="396">
+              <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
               <folding>
                 <element signature="e#48#70#0" expanded="false" />
-                <element signature="e#764#2006#0" expanded="false" />
+                <element signature="e#904#2146#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -138,7 +140,6 @@
         <option value="$PROJECT_DIR$/json/bd.php" />
         <option value="$PROJECT_DIR$/json/fonctionBd.php" />
         <option value="$PROJECT_DIR$/json/connexion.php" />
-        <option value="$PROJECT_DIR$/json/inscription.php" />
         <option value="$PROJECT_DIR$/json/est_connecte.php" />
         <option value="$PROJECT_DIR$/json/est_inscrit.php" />
         <option value="$PROJECT_DIR$/json/deconnexion.php" />
@@ -147,6 +148,7 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/ihm.js" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/json/inscription.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
@@ -167,9 +169,9 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="974" />
+    <option name="width" value="1291" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -202,6 +204,11 @@
               <item name="JSPROJET" type="b2602c69:ProjectViewProjectNode" />
               <item name="JSPROJET" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="JSPROJET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSPROJET" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -265,7 +272,7 @@
       <workItem from="1520352580297" duration="10921000" />
       <workItem from="1520418911880" duration="8253000" />
       <workItem from="1520546122160" duration="4430000" />
-      <workItem from="1520587866998" duration="3698000" />
+      <workItem from="1520587866998" duration="5434000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <created>1519380293497</created>
@@ -484,22 +491,29 @@
       <option name="project" value="LOCAL" />
       <updated>1520549953729</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="A faire : Note  + menu + ajouter article + style">
+      <created>1520591615645</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1520591615645</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82966000" />
+    <option name="totallyTimeSpent" value="84702000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20678337" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10074627" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33114755" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -841,9 +855,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding>
+            <element signature="e#2467#3845#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/json/avis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="282">
           <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
             <marker date="1520428740063" expanded="true" signature="397:463" ph="UPDATE musique... " />
@@ -853,39 +877,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/json/inscription.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="252">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
-            <marker date="1520246463111" expanded="true" signature="689:773" ph="INSERT INTO utilisateur... " />
+            <marker date="1520593128845" expanded="true" signature="680:764" ph="INSERT INTO utilisateur... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ihm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="134" column="40" lean-forward="false" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+        <state relative-caret-position="471">
+          <caret line="50" column="58" lean-forward="true" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
           <folding>
-            <element signature="e#2467#3845#0#HTML" expanded="false" />
+            <element signature="e#819#1809#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="396">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
           <folding>
             <element signature="e#48#70#0" expanded="false" />
-            <element signature="e#764#2006#0" expanded="false" />
+            <element signature="e#904#2146#0" expanded="false" />
           </folding>
         </state>
       </provider>
