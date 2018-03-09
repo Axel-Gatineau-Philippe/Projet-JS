@@ -15,14 +15,19 @@ $avis = new stdClass();
 $avis->result = true;
 $avis->message = '';
 
-if (isset($_POST['avisText']) && isset($_POST['categorieChoisi'])){
+
+if (isset($_POST['avisText']) && isset($_POST['categorieChoisi']) && isset($_POST['note'])){
     $avisText = $_POST['avisText'];
     $categorieChoisi = $_POST['categorieChoisi'];
+    $note = $_POST['note'];
 
-    $sql = 'UPDATE musique SET avis = :avisText WHERE genre = :categorieChoisi';
+
+    $sql = 'UPDATE musique SET avis = :avisText, note = :note WHERE genre = :categorieChoisi';
     $stmt = $bd->prepare($sql);
     $stmt->bindValue('avisText', $avisText, PDO::PARAM_STR);
     $stmt->bindValue('categorieChoisi', $categorieChoisi, PDO::PARAM_STR);
+    $stmt->bindValue('note', $note, PDO::PARAM_STR);
+
     $stmt->execute();
 }
 

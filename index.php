@@ -133,23 +133,23 @@
         <ul class="noteEtoile">
             <li class="etoileEteinte">
                 <label for="note1">1</label>
-                <input class="radioBut" type="radio" id="note1" value="1">
+                <input class="radioBut" type="radio" id="note1" value="1" name="note">
             </li>
             <li class="etoileEteinte">
                 <label for="note2">2</label>
-                <input class="radioBut" type="radio" id="note2" value="2">
+                <input class="radioBut" type="radio" id="note2" value="2" name="note">
             </li>
             <li class="etoileEteinte">
                 <label for="note3">3</label>
-                <input class="radioBut" type="radio" id="note3" value="3">
+                <input class="radioBut" type="radio" id="note3" value="3" name="note">
             </li>
             <li class="etoileEteinte">
                 <label for="note4">4</label>
-                <input class="radioBut" type="radio" id="note4" value="4">
+                <input class="radioBut" type="radio" id="note4" value="4" name="note">
             </li>
             <li class="etoileEteinte">
                 <label for="note5">5</label>
-                <input class="radioBut" type="radio" id="note5" value="5">
+                <input class="radioBut" type="radio" id="note5" value="5" name="note">
             </li>
         </ul>
         <br/>
