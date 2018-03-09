@@ -14,8 +14,8 @@ ul.noteEtoile {
 
 ul.noteEtoile li{
     list-style: none;
-    min-height: 40px;
-    min-height: 40px;
+    min-height: 20px;
+    min-height: 20px;
     margin: auto;
     padding: auto;
 }
@@ -36,9 +36,9 @@ ul.noteEtoile li.etoileCochee {
     font-weight: bold;
 }
 
-ul.noteEtoile.allumer li.noteTabulee {
+/*ul.noteEtoile.allumer li.noteTabulee {
     outline: 1px dotted #000000;
-}
+}*/
 
 .radioBut{
     position: absolute;
