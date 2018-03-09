@@ -17,18 +17,28 @@
 <!-- Add your site or application content here -->
 
 <!-- Faire en sorte que le menu soit toujours présent et en haut de la page-->
-<nav class="menu">
-    <form id="form-deconnexion" style="display: none;" method="post" action="json/deconnexion.php">
-        <input type="submit" value="Se déconnecter" onclick=""/>
-    </form>
-
-    <form style="display:none" class="affichFormInsc">
-        <input type="button" value="S'inscrire" />
-    </form>
-
-    <form style="display:none" class="affichFormAvis">
-        <input type="button" value="Donnez votre avis !" />
-    </form>
+<nav id="menu">
+    <ul>
+        <li>
+            <form id="form-deconnexion" style="display: none;" method="post" action="json/deconnexion.php">
+                <input type="submit" value="Se déconnecter" onclick=""/>
+            </form>
+        </li>
+        <li>
+            <form style="display:none" class="affichFormInsc">
+                <input type="button" value="S'inscrire" />
+            </form>
+        </li>
+        <li>
+            <form style="display:none" class="affichFormAvis">
+                <input type="button" value="Donnez votre avis !" />
+            </form>
+        </li>
+        <li>
+            <!-- Eviter de recharger à l'avenir-->
+            <button class="retour" onclick="window.location.reload(true)">Retour</button>
+        </li>
+    </ul>
 </nav>
 
 
@@ -168,8 +178,7 @@
     </form>
 
 </div>
-<!-- Eviter de recharger à l'avenir-->
-<button class="retour" onclick="window.location.reload(true)">Retour</button>
+
 
 
 

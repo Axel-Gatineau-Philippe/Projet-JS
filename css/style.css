@@ -1,9 +1,19 @@
 html {
+    background-color: azure;
     text-align: center;
 }
 
 #presentation {
     display: none;
+}
+
+#menu ul {
+    background-color: #555555;
+}
+#menu li {
+    display: inline-block;
+    list-style: none;
+
 }
 
 ul.noteEtoile {
@@ -16,16 +26,17 @@ ul.noteEtoile li{
     list-style: none;
     min-height: 20px;
     min-height: 20px;
-    margin: auto;
-    padding: auto;
+    margin: 4px;
+    padding: 0;
+    display: inline-block;
 }
 
 ul.noteEtoile li label {
-    display: block;
     text-align: center;
     line-height: 20px;
     background: url("https://image.noelshack.com/fichiers/2018/10/5/1520589265-etoiles.gif") center top no-repeat;
     cursor: pointer;
+    display: block;
 }
 
 ul.noteEtoile li.etoileEteinte label {
@@ -36,9 +47,6 @@ ul.noteEtoile li.etoileCochee {
     font-weight: bold;
 }
 
-/*ul.noteEtoile.allumer li.noteTabulee {
-    outline: 1px dotted #000000;
-}*/
 
 .radioBut{
     position: absolute;

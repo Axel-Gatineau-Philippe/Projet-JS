@@ -39,11 +39,11 @@
             'url': '/json/est_connecte.php'
         }).done(function (data) {
             if (data.est_connecte) {
-                $('#form-deconnexion').slideDown(1000);
+                $('#form-deconnexion').fadeIn();
                 //$('.selection-categorie').fadeIn();
                 $('.musique').fadeIn();
                 afficherArticles();
-                $('.affichFormAvis').slideDown(1000);
+                $('.affichFormAvis').fadeIn();
                 $('#form-avis').fadeIn();
             }
             else {
