@@ -126,9 +126,32 @@
 </div>
 
 <br/>
-
+<!-- Pour récuperer les note en fonction de l'étoile, s'insipirer de selection catégorie-->
 <div class="avis">
     <form id="form-avis" method="post" action="json/avis.php">
+        <ul class="noteEtoile">
+            <li class="etoileEteinte">
+                <label for="note1">1</label>
+                <input class="radioBut" type="radio" id="note1" value="1">
+            </li>
+            <li class="etoileEteinte">
+                <label for="note2">2</label>
+                <input class="radioBut" type="radio" id="note2" value="2">
+            </li>
+            <li class="etoileEteinte">
+                <label for="note3">3</label>
+                <input class="radioBut" type="radio" id="note3" value="3">
+            </li>
+            <li class="etoileEteinte">
+                <label for="note4">4</label>
+                <input class="radioBut" type="radio" id="note4" value="4">
+            </li>
+            <li class="etoileEteinte">
+                <label for="note5">5</label>
+                <input class="radioBut" type="radio" id="note5" value="5">
+            </li>
+        </ul>
+        <br/>
         <select id="categorieChoisi" name="categorieChoisi">
             <option value="Rap">Rap</option>
             <option value="Rock">Rock</option>
@@ -143,12 +166,6 @@
         <input type="submit" value="Envoyer" />
     </form>
 
-    <img id="Etoile1" src="https://image.noelshack.com/fichiers/2018/10/4/1520549429-starout.gif" />
-    <img id="Etoile2" src="https://image.noelshack.com/fichiers/2018/10/4/1520549429-starout.gif" />
-    <img id="Etoile3" src="https://image.noelshack.com/fichiers/2018/10/4/1520549429-starout.gif" />
-    <img id="Etoile4" src="https://image.noelshack.com/fichiers/2018/10/4/1520549429-starout.gif" />
-    <img id="Etoile5" src="https://image.noelshack.com/fichiers/2018/10/4/1520549429-starout.gif" />
-
 </div>
 <!-- Eviter de recharger à l'avenir-->
 <button class="retour" onclick="window.location.reload(true)">Retour</button>
@@ -158,8 +175,9 @@
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="js/vendor/jquery-3.2.1.min.js"></script>
 <script src="js/plugins.js"></script>
+<script src="js/ihm.js"></script>
 <script src="js/main.js"></script>
-<script type="text/javascript" src="js/ihm.js"></script>
+
 
 
 </body>

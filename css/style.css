@@ -6,6 +6,38 @@ html {
     display: none;
 }
 
+ul.noteEtoile {
+    margin: 0;
+    padding: 0;
+}
+
+ul.noteEtoile li{
+    list-style: none;
+    min-height: 20px;
+    min-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+ul.noteEtoile li label {
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    background: url("https://image.noelshack.com/fichiers/2018/10/5/1520589265-etoiles.gif") center top no-repeat;
+    cursor: pointer;
+}
+
+ul.noteEtoile li.etoileEteinte label {
+    background-position: center -60px;
+}
+
+.radioBut{
+    position: absolute;
+    left: -999%;
+}
+
+
+
 .inscription{
     display: none;
 }
