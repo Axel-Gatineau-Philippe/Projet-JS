@@ -22,10 +22,11 @@
                     $('<div />').append(musique.date),
                     $('<div />').append(musique.note),
                     $('<div />').append(musique.avis),
-                    $('<br/>')
-
+                    $('<br/>').particleground({
+                        dotColor: '#5cbdaa',
+                        lineColor: '#5cbdaa'
+                    })
                 )
-
             }
         }).fail(erreurCritique);
         return false;
@@ -167,7 +168,7 @@
             });
 
             $('.musique').toggleClass("hide", function () {
-                
+
             });
             $('.retour').toggleClass("show", function () {
 

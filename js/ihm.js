@@ -49,4 +49,9 @@
         $("ul.noteEtoile input:checked").trigger("click");
     })
 
+    //Utilisation du plugin pour le fond d'écran animé
+    $('#background').particleground({
+        dotColor: '#5cbdaa',
+        lineColor: '#5cbdaa'
+    });
 })();
