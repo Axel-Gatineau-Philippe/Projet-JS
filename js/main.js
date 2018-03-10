@@ -22,15 +22,12 @@
                     $('<div />').append(musique.date),
                     $('<div />').append(musique.note),
                     $('<div />').append(musique.avis),
-                    $('<br/>').particleground({
-                        dotColor: '#5cbdaa',
-                        lineColor: '#5cbdaa'
-                    })
+                    $('<br/>')
                 )
             }
         }).fail(erreurCritique);
         return false;
-    }
+    };
 
 
 
@@ -90,7 +87,7 @@
                         window.location.reload(true);
                     }
                     else {
-
+                        alert('Identifiant ou mot de passe incorrect !');
                         console.log('Pas connecté');
                     }
                 })

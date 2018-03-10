@@ -22,15 +22,17 @@ $data->est_connecte = false;
 if (isset($_POST['mail']) && isset($_POST['pass'])) {
     $mail = $_POST['mail'];
     $pass = $_POST['pass'];
-    $resultat = fonctionBd::connecterUtilisateur($mail, $pass);
-    session_start();
-    /*$_SESSION['NumeroUtilisateur'] = $resultat['numeroUtilisateur'];
-    $_SESSION['Nom'] = $resultat['nom'];
-    $_SESSION['Prenom'] = $resultat['prenom'];
-    $_SESSION['Mail'] = $resultat['mail'];
-    $_SESSION['Mdp'] = $resultat['mdp'];*/
-    $_SESSION['id'] = '1';
-    $data->est_connecte = true;
+    if (fonctionBd::mailExistant($mail) == true){
+        $resultat = fonctionBd::connecterUtilisateur($mail, $pass);
+        session_start();
+        /*$_SESSION['NumeroUtilisateur'] = $resultat['numeroUtilisateur'];
+        $_SESSION['Nom'] = $resultat['nom'];
+        $_SESSION['Prenom'] = $resultat['prenom'];
+        $_SESSION['Mail'] = $resultat['mail'];
+        $_SESSION['Mdp'] = $resultat['mdp'];*/
+        $_SESSION['id'] = '1';
+        $data->est_connecte = true;
+    }
 
 }
 else {
