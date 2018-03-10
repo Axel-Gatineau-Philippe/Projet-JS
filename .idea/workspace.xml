@@ -291,7 +291,7 @@
       <workItem from="1520587866998" duration="5611000" />
       <workItem from="1520631727213" duration="4564000" />
       <workItem from="1520673118576" duration="919000" />
-      <workItem from="1520716619042" duration="4585000" />
+      <workItem from="1520716619042" duration="4658000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <created>1519380293497</created>
@@ -559,11 +559,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520721462000</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="menu + style">
+      <created>1520723099818</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1520723099818</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94947000" />
+    <option name="totallyTimeSpent" value="95020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -641,7 +648,8 @@
     <MESSAGE value="menu + ajouter article + style&#10;&#10;&#10;&#10;NOTE FONCTIONNELLE" />
     <MESSAGE value="menu + ajouter article + style&#10;Fond d'écran animé" />
     <MESSAGE value="menu + ajouter article + style" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu + ajouter article + style" />
+    <MESSAGE value="menu + style" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu + style" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
