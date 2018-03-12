@@ -55,23 +55,41 @@
             }
         }).fail(erreurCritique);
 
-        $('.form-inscription').submit(function () {
+        /*$('.form-inscription').submit(function () {
             $.ajax({
                 url: $(this).attr('action'),
                 method: $(this).attr('method'),
                 data: $(this).serialize()
-            })
-                .done(function (data) {
-                    console.log('data=' + data);
-                    if (data.est_inscrit === true) {
-                        window.location.reload(true);
-                    }
-                    else {
-                        alert('Utilisateur non inscrit ou déjà existant')
-                        console.log('Non inscrit');
-                    }
-                })
-                .fail(erreurCritique);
+            }).done(function (data) {
+                console.log('data=' + data);
+                if (data.est_inscrit === true) {
+                    alert('Inscription validée');
+                    window.location.reload(true);
+                }
+                else {
+                    alert('Utilisateur non inscrit ou déjà existant');
+                    console.log('Non inscrit');
+                }
+            }).fail(erreurCritique);
+            return false;
+        });*/
+
+        $('#form-inscription').submit(function () {
+            $.ajax({
+                url: $(this).attr('action'),
+                method: $(this).attr('method'),
+                data: $(this).serialize()
+            }).done(function (data) {
+                console.log('data=' + data);
+                if (data.result === true) {
+                    alert('Inscription validée');
+                    window.location.reload(true);
+                }
+                else {
+                    alert('Utilisateur non inscrit ou déjà existant');
+                    console.log('Non inscrit');
+                }
+            }).fail(erreurCritique);
             return false;
         });
 
@@ -80,18 +98,16 @@
                 url: $(this).attr('action'),
                 method: $(this).attr('method'),
                 data: $(this).serialize()
-            })
-                .done(function (data) {
-                    console.log('data=' + data);
-                    if (data.est_connecte === true) {
-                        window.location.reload(true);
-                    }
-                    else {
-                        alert('Identifiant ou mot de passe incorrect !');
-                        console.log('Pas connecté');
-                    }
-                })
-                .fail(erreurCritique);
+            }).done(function (data) {
+                console.log('data=' + data);
+                if (data.est_connecte === true) {
+                    window.location.reload(true);
+                }
+                else {
+                    alert('Identifiant ou mot de passe incorrect !');
+                    console.log('Pas connecté');
+                }
+            }).fail(erreurCritique);
             return false;
         });
 

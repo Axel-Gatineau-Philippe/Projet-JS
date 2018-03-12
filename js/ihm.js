@@ -55,5 +55,4 @@
         lineColor: '#5cbdaa'
     });
 
-    $('#categorieChoisi').selectMenu();
 })();
