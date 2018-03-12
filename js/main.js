@@ -10,18 +10,19 @@
             'url': '/json/musique.php'
 
         }).done(function (musiques) {
-
             console.log('musiques=' + musiques);
             for (let i=0; i<musiques.liste.length; ++i) {
                 let musique = musiques.liste[i];
+                let articles = new Article(musique.titre, musique.artiste, musique.note, musique.genre, musique.pochette, musique.avis, musique.date);
+
                 $('.musique').append(
-                    $('<h1 <h1/>').append(musique.genre),
-                    $('<div />').append(musique.pochette),
-                    $('<h3 </h3>').append(musique.titre),
-                    $('<h5 </h5>').append(musique.artiste),
-                    $('<div />').append(musique.date),
-                    $('<div />').append(musique.note),
-                    $('<div />').append(musique.avis),
+                    $('<h1 <h1/>').append(articles.genre),
+                    $('<div />').append(articles.pochette),
+                    $('<h3 </h3>').append(articles.titre),
+                    $('<h5 </h5>').append(articles.artiste),
+                    $('<div />').append(articles.date),
+                    $('<div />').append(articles.note),
+                    $('<div />').append(articles.avis),
                     $('<br/>')
                 )
             }
@@ -55,24 +56,6 @@
             }
         }).fail(erreurCritique);
 
-        /*$('.form-inscription').submit(function () {
-            $.ajax({
-                url: $(this).attr('action'),
-                method: $(this).attr('method'),
-                data: $(this).serialize()
-            }).done(function (data) {
-                console.log('data=' + data);
-                if (data.est_inscrit === true) {
-                    alert('Inscription validée');
-                    window.location.reload(true);
-                }
-                else {
-                    alert('Utilisateur non inscrit ou déjà existant');
-                    console.log('Non inscrit');
-                }
-            }).fail(erreurCritique);
-            return false;
-        });*/
 
         $('#form-inscription').submit(function () {
             $.ajax({
@@ -129,33 +112,6 @@
             return false;
         });
 
-        /*$('.selection-categorie').submit(function () {
-            $.ajax({
-                url: $(this).attr('action'),
-                method: $(this).attr('method'),
-                data: $(this).serialize()
-            }).done(function (musiques) {
-
-                console.log('musiques=' + musiques);
-                for (let i=0; i<musiques.liste.length; ++i) {
-                    let musique = musiques.liste[i];
-                    $('.musique').append(
-                        $('<h3 </h3>').append(musique.titre),
-                        $('<h5 </h5>').append(musique.artiste),
-                        $('<div />').append(musique.date),
-                        $('<div />').append(musique.genre),
-                        $('<div />').append(musique.note),
-                        $('<br/>')
-
-                    )
-
-                }
-            }).fail(erreurCritique);
-            return false;
-        }).click(function () {
-            $('.musique').toggleClass("show", function () {
-            });
-        });*/
 
         $('#form-avis').submit(function () {
             $.ajax({
@@ -170,6 +126,9 @@
         });
 
         $('.affichFormInsc').click(function () {
+            $('html,body').animate({
+                scrollTo: $("#form-inscription").offset().bottom
+            }, 'slow');
             $('.inscription').toggleClass("show", function () {
 
             })

@@ -142,23 +142,23 @@
 
             <ul class="noteEtoile">
                 <li class="etoileEteinte">
-                    <label for="note1">1</label>
+                    <label for="note1">~</label>
                     <input class="radioBut" type="radio" id="note1" value="1" name="note">
                 </li>
                 <li class="etoileEteinte">
-                    <label for="note2">2</label>
+                    <label for="note2">~</label>
                     <input class="radioBut" type="radio" id="note2" value="2" name="note">
                 </li>
                 <li class="etoileEteinte">
-                    <label for="note3">3</label>
+                    <label for="note3">~</label>
                     <input class="radioBut" type="radio" id="note3" value="3" name="note">
                 </li>
                 <li class="etoileEteinte">
-                    <label for="note4">4</label>
+                    <label for="note4">~</label>
                     <input class="radioBut" type="radio" id="note4" value="4" name="note">
                 </li>
                 <li class="etoileEteinte">
-                    <label for="note5">5</label>
+                    <label for="note5">~</label>
                     <input class="radioBut" type="radio" id="note5" value="5" name="note">
                 </li>
             </ul>
@@ -187,6 +187,7 @@
 <script src="js/vendor/jquery-3.2.1.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/ihm.js"></script>
+<script src="js/articles.js"></script>
 <script src="js/main.js"></script>
 
 

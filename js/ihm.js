@@ -19,30 +19,6 @@
             $(this).find("li input:checked").parent("li").trigger("mouseover");
         });
 
-        //Au clavier
-        /*$("ul.noteEtoile.radioBut")
-            .focus(function() {
-                $(this).parents("ul.noteEtoile").find("li").removeClass("noteTabulee");
-
-                $(this).parent("li").addClass("noteTabulee");
-
-                $(this).parent("li").nextAll("li").addClass("etoileEteinte");
-
-                $(this).parent("li").prevAll("li").removeClass("etoileEteinte");
-
-                $(this).parent("li").removeClass("etoileEteinte");
-            })
-            .blur(function() {
-                $(this).parents("ul.noteEtoile").find("li").removeClass("noteTabulee");
-
-                if($(this).parents("ul.noteEtoile").find("li input:checked").length == 0) {
-                    $(this).parents("ul.noteEtoile").find("li").addClass("etoileEteinte");
-                }
-            })
-            .click(function() {
-                $(this).parents("ul.noteEtoile").find("li").removeClass("noteCochee");
-                $(this).parent("li").addClass("noteCochee");
-            });*/
 
         //Coché par défault
         $('ul.noteEtoile input:checked').parent("li").trigger("mouseover");
@@ -51,8 +27,8 @@
 
     //Utilisation du plugin pour le fond d'écran animé
     $('#background').particleground({
-        dotColor: '#5cbdaa',
-        lineColor: '#5cbdaa'
+        dotColor: '#00ffff',
+        lineColor: '#00ffff'
     });
 
 })();
