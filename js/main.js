@@ -126,12 +126,13 @@
         });
 
         $('.affichFormInsc').click(function () {
-            $('html,body').animate({
-                scrollTo: $("#form-inscription").offset().bottom
-            }, 'slow');
             $('.inscription').toggleClass("show", function () {
 
-            })
+            });
+            $('html, body').stop()
+                .animate( {
+                    scrollTop: $('#form-inscription')
+                        .offset().top }, 500);
         });
 
         $('.affichFormAvis').click(function () {
