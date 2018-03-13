@@ -7,13 +7,20 @@ html {
     display: none;
 }
 
-#menu ul {
+
+.menu ul {
     background-color: #555555;
 }
-#menu li {
+.menu li {
     display: inline-block;
     list-style: none;
 
+}
+
+#home {
+    width: 30px;
+    height: 30px;
+    margin-left: -500px;
 }
 
 ul.noteEtoile {

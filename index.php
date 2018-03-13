@@ -17,7 +17,10 @@
 <!-- Add your site or application content here -->
 
 <!-- Faire en sorte que le menu soit toujours présent et en haut de la page-->
-<nav id="menu">
+
+<img id="home" src="https://image.noelshack.com/fichiers/2018/11/2/1520979355-home-1110868-960-720.png" alt="home" onclick="window.location.reload(true);">
+<nav class="menu" style="display: none">
+
     <ul>
         <li>
             <form id="form-deconnexion" style="display: none;" method="post" action="json/deconnexion.php">
@@ -87,49 +90,6 @@
 
     <br/>
 
-    <!--<form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
-        <input type="hidden" name="id_categorie" value="rap">
-        <input type="submit" class="rapButton" value="" />
-    </form>
-    <br/>
-
-    <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
-        <input type="hidden" name="id_categorie" value="rock">
-        <input type="submit" class="rockButton" value="" />
-    </form>
-
-    <br/>
-
-
-    <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
-        <input type="hidden" name="id_categorie" value="reggae">
-        <input type="submit" class="reggaeButton" value="" />
-    </form>
-
-    <br/>
-
-
-    <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
-        <input type="hidden" name="id_categorie" value="jazz">
-        <input type="submit" class="jazzButton" value="" />
-    </form>
-
-    <br/>
-
-
-    <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
-        <input type="hidden" name="id_categorie" value="hiphop">
-        <input type="submit" class="hiphopButton" value=""/>
-    </form>
-    <br/>
-
-
-    <form style="display:none" class="selection-categorie" method="post" action="json/musique.php">
-        <input type="hidden" name="id_categorie" value="humour">
-        <input type="submit" class="humourButton" value="" />
-    </form>
-    <br/>
-    -->
 
     <div class="musique">
 

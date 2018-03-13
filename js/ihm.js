@@ -23,12 +23,17 @@
         //Coché par défault
         $('ul.noteEtoile input:checked').parent("li").trigger("mouseover");
         $("ul.noteEtoile input:checked").trigger("click");
-    })
 
-    //Utilisation du plugin pour le fond d'écran animé
-    $('#background').particleground({
-        dotColor: '#00ffff',
-        lineColor: '#00ffff'
+        //Utilisation du plugin pour le fond d'écran animé
+        $('#background').particleground({
+            dotColor: '#00ffff',
+            lineColor: '#00ffff'
+        });
+
+        $('#home').mouseover(function () {
+            $('.menu').fadeIn(100);
+        })
     });
+
 
 })();
