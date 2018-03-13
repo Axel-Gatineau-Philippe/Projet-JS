@@ -9,10 +9,11 @@ html {
 
 
 .menu ul {
+    float: left;
     background-color: #555555;
 }
 .menu li {
-    display: inline-block;
+    display: block;
     list-style: none;
 
 }
@@ -60,7 +61,10 @@ ul.noteEtoile li.etoileCochee {
     left: -999%;
 }
 
-
+.musique img {
+    width: 100px;
+    height: 100px;
+}
 
 .inscription{
     display: none;

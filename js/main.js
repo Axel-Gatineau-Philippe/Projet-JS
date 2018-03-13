@@ -147,13 +147,6 @@
 
             });
         });
-
-
-
     });
 
-
-
 }) ();
-
-//APpel ajax avec formulaire d'avis en dur en fonction de la catégorie qui affiche en direct l'avis ensuite sur la page à l'image de slection catégorie
