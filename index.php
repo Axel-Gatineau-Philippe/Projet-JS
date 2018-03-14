@@ -16,9 +16,10 @@
 <body>
 <!-- Add your site or application content here -->
 
-<!-- Faire en sorte que le menu soit toujours présent et en haut de la page-->
-
 <img id="home" src="https://image.noelshack.com/fichiers/2018/11/2/1520979355-home-1110868-960-720.png" alt="home" onclick="window.location.reload(true);">
+<form style="display:none" class="affichFormInsc">
+    <input type="button" value="S'inscrire" />
+</form>
 <nav class="menu" style="display: none">
 
     <ul>
@@ -28,17 +29,16 @@
             </form>
         </li>
         <li>
-            <form style="display:none" class="affichFormInsc">
-                <input type="button" value="S'inscrire" />
-            </form>
-        </li>
-        <li>
-            <form style="display:none" class="affichFormAvis">
+            <form style="display:none" class="affichFormAvisVisiteur">
                 <input type="button" value="Donnez votre avis !" />
             </form>
         </li>
         <li>
-            <!-- Eviter de recharger à l'avenir-->
+            <form style="display:none" class="affichAjoutArticle">
+                <input type="button" value="Ajouter un article" />
+            </form>
+        </li>
+        <li>
             <button class="retour" onclick="window.location.reload(true)">Retour</button>
         </li>
     </ul>
@@ -46,9 +46,9 @@
 
 
 <div id="background">
-    <h1 style="display: none" id="titre1">Bienvenue sur e-Rated Music</h1><br/>
+    <h1 style="display: none" id="titre1">eRated Music, le site qui laisse la parole aux fans de musique !</h1><br/>
 
-    <p id="presentation">e-Rated Music propose à ses utilisateurs de noter les dernières sortie que musiques par type sur cinq étoiles,
+    <p id="presentation">eRated Music propose à ses utilisateurs de noter les dernières sortie de musiques par type sur cinq étoiles,
         avec la possibilité de laisser son avis.<br/>
         Bonne visite !</p>
 
@@ -90,16 +90,42 @@
 
     <br/>
 
+    <form style="display:none" class="affichFormAvisArticle">
+        <input type="button" value="Commenter et noter un article !" />
+    </form>
+    <br/>
 
     <div class="musique">
 
     </div>
 
     <br/>
-    <!-- Pour récuperer les note en fonction de l'étoile, s'insipirer de selection catégorie-->
-    <div class="avis">
-        <form id="form-avis" method="post" action="json/avis.php">
+    <div class="avisVisiteurs">
+        <p>eRated ne vous permet pas seulement de noter des musiques. Vous avez également la possibilité de noter le site !
+            N'hésitez pas laisser des remarques ou encore donner des suggestions !</p>
+        <form id="form-avis-visiteurs" method="post" action="json/avisUtilisateurs.php">
+            <input type="text" name="mail" value="eMail" onfocus="this.value=''">
+            <br/>
+            <label>Donnez votre avis sur le site :</label>
+            <br/>
+            <textarea style="width: auto" name="avisUtilisateur"></textarea>
+            <br/>
+            <input type="submit" value="Envoyer" />
+        </form>
+    </div>
 
+    <div class="avisArticles">
+        <form id="form-avis-articles" method="post" action="json/avis.php">
+            <label>Choisissez la catégorie de l'article que vous souhaitez noter :</label>
+            <select id="categorieChoisi" name="categorieChoisi">
+                <option value="Rap">Rap</option>
+                <option value="Rock">Rock</option>
+                <option value="HipHop">Hip Hop</option>
+                <option value="Humour">Humour</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Reggaeton">Reggaeton</option>
+            </select>
+            <br/>
             <ul class="noteEtoile">
                 <li class="etoileEteinte">
                     <label for="note1">~</label>
@@ -123,7 +149,17 @@
                 </li>
             </ul>
             <br/>
-            <select id="categorieChoisi" name="categorieChoisi">
+            <label>Donnez votre avis sur l'article :</label>
+            <textarea style="width: auto" name="avisText" ></textarea>
+            <br/>
+            <input type="submit" value="Envoyer" />
+        </form>
+    </div>
+
+    <div class="ajoutArticle">
+        <form id="form-ajout-article" method="post" action="json/avis.php">
+            <label>Choisissez la catégorie de l'article que vous souhaitez ajouter ou mettre à jour :</label>
+            <select id="categorieAjout" name="categorieAjout">
                 <option value="Rap">Rap</option>
                 <option value="Rock">Rock</option>
                 <option value="HipHop">Hip Hop</option>
@@ -132,8 +168,19 @@
                 <option value="Reggaeton">Reggaeton</option>
             </select>
             <br/>
-            <textarea style="width: auto" name="avisText">
-    </textarea>
+            <label>Donnez une note sur cinq à l'article que vous souhaitez ajouter ou mettre à jour :</label>
+            <br/>
+            <select id="noteAjout" name="noteAjout">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br/>
+            <label>Donnez votre avis sur l'article :</label>
+            <textarea style="width: auto" name="avisText" ></textarea>
+            <br/>
             <input type="submit" value="Envoyer" />
         </form>
     </div>

@@ -39,11 +39,12 @@
         }).done(function (data) {
             if (data.est_connecte) {
                 $('#form-deconnexion').fadeIn();
-                //$('.selection-categorie').fadeIn();
                 $('.musique').fadeIn();
                 afficherArticles();
-                $('.affichFormAvis').fadeIn();
-                $('#form-avis').fadeIn();
+                $('.affichFormAvisVisiteur').fadeIn();
+                $('.affichFormAvisArticle').fadeIn();
+                $('#form-avis-articles').fadeIn();
+                $('#form-avis-visiteurs').fadeIn();
             }
             else {
                 $('#presentation').fadeIn();
@@ -113,12 +114,24 @@
         });
 
 
-        $('#form-avis').submit(function () {
+        $('#form-avis-articles').submit(function () {
             $.ajax({
                 url: $(this).attr('action'),
                 method: $(this).attr('method'),
                 data: $(this).serialize()
             }).done(function (avis) {
+                alert('Votre avis à été envoyé');
+                window.location.reload(true);
+            }).fail(erreurCritique);
+            return false;
+        });
+
+        $('#form-avis-visiteurs').submit(function () {
+            $.ajax({
+                url: $(this).attr('action'),
+                method: $(this).attr('method'),
+                data: $(this).serialize()
+            }).done(function (avisUtil) {
                 alert('Votre avis à été envoyé');
                 window.location.reload(true);
             }).fail(erreurCritique);
@@ -135,8 +148,8 @@
                         .offset().top }, 500);
         });
 
-        $('.affichFormAvis').click(function () {
-            $('.avis').toggleClass("show", function () {
+        $('.affichFormAvisArticle').click(function () {
+            $('.avisArticles').toggleClass("show", function () {
 
             });
 
@@ -147,6 +160,21 @@
 
             });
         });
+
+        $('.affichFormAvisVisiteur').click(function () {
+            $('.avisVisiteurs').toggleClass("show", function () {
+
+            });
+            $('.musique').toggleClass("hide", function () {
+
+            });
+            $('.retour').toggleClass("show", function () {
+
+            });
+            $('.affichFormAvisArticle').toggleClass("hide", function () {
+                
+            })
+        })
     });
 
 }) ();
