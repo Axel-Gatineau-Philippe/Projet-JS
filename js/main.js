@@ -13,14 +13,14 @@
             console.log('musiques=' + musiques);
             for (let i=0; i<musiques.liste.length; ++i) {
                 let musique = musiques.liste[i];
-                let articles = new Article(musique.titre, musique.artiste, musique.note, musique.genre, musique.pochette, musique.avis, musique.date);
+                let articles = new Article(musique.titre, musique.artiste, musique.note, musique.genre, musique.pochette, musique.avis, musique.annee);
 
                 $('.musique').append(
                     $('<h1 <h1/>').append(articles.genre),
                     $('<div />').append(articles.pochette),
                     $('<h3 </h3>').append(articles.titre),
                     $('<h5 </h5>').append(articles.artiste),
-                    $('<div />').append(articles.date),
+                    $('<div />').append(articles.annee),
                     $('<div />').append(articles.note),
                     $('<div />').append(articles.avis),
                     $('<br/>')
@@ -30,7 +30,33 @@
         return false;
     };
 
+    let afficherArticlesNotation = function () {
+        $.ajax({
+            'url': '/json/musique.php'
 
+        }).done(function (musiques) {
+            console.log('musiques=' + musiques);
+            for (let i = 0; i < musiques.liste.length; ++i) {
+                let musique = musiques.liste[i];
+                let articles = new Article(musique.titre, musique.artiste, musique.note, musique.genre, musique.pochette, musique.avis, musique.date);
+
+                $('#categorieChoisi').append(
+                    $('<option value="' + articles.titre + '" </option>').append(articles.titre)
+                )
+            }
+        }).fail(erreurCritique);
+        return false;
+    };
+
+    $('body').vegas({
+        slides: [
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521074076-images-1.jpg' },
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521074076-images.jpg' },
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521074076-telechargement.jpg' }
+        ]
+    })('overlay', {
+        src:'/vegas/overlays/11.png'
+    });;
 
     $(document).ready(function () {
 
@@ -45,6 +71,8 @@
                 $('.affichFormAvisArticle').fadeIn();
                 $('#form-avis-articles').fadeIn();
                 $('#form-avis-visiteurs').fadeIn();
+                $('.affichAjoutArticle').fadeIn();
+                $('#form-ajout-article').fadeIn();
             }
             else {
                 $('#presentation').fadeIn();
@@ -138,6 +166,20 @@
             return false;
         });
 
+        $('#form-ajout-article').submit(function () {
+            $.ajax({
+                url: $(this).attr('action'),
+                method: $(this).attr('method'),
+                data: $(this).serialize()
+            }).done(function (ajout) {
+                console.log(ajout);
+                alert('L\'article a été ajouté');
+                window.location.reload(true);
+            }).fail(erreurCritique);
+            return false;
+        });
+
+
         $('.affichFormInsc').click(function () {
             $('.inscription').toggleClass("show", function () {
 
@@ -149,6 +191,7 @@
         });
 
         $('.affichFormAvisArticle').click(function () {
+            afficherArticlesNotation();
             $('.avisArticles').toggleClass("show", function () {
 
             });
@@ -172,7 +215,22 @@
 
             });
             $('.affichFormAvisArticle').toggleClass("hide", function () {
-                
+
+            })
+        })
+
+        $('.affichAjoutArticle').click(function () {
+            $('.ajoutArticle').toggleClass("show", function () {
+
+            });
+            $('.musique').toggleClass("hide", function () {
+
+            });
+            $('.retour').toggleClass("show", function () {
+
+            });
+            $('.affichFormAvisArticle').toggleClass("hide", function () {
+
             })
         })
     });

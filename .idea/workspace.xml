@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5239127-aa9c-47ac-a583-e989e1b29d1e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/json/ajoutArticle.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/json/avisUtilisateurs.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vegas/overlays/01.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vegas/overlays/02.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vegas/overlays/03.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vegas/overlays/04.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vegas/overlays/05.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vegas/overlays/06.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vegas/overlays/07.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vegas/overlays/08.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vegas/overlays/09.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vegas/vegas.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vegas/vegas.min.css.map" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/js/ihm.js" afterPath="$PROJECT_DIR$/js/ihm.js" />
+      <change beforePath="$PROJECT_DIR$/js/articles.js" afterPath="$PROJECT_DIR$/js/articles.js" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/js/plugins.js" afterPath="$PROJECT_DIR$/js/plugins.js" />
+      <change beforePath="$PROJECT_DIR$/json/ajoutArticle.php" afterPath="$PROJECT_DIR$/json/ajoutArticle.php" />
+      <change beforePath="$PROJECT_DIR$/json/avis.php" afterPath="$PROJECT_DIR$/json/avis.php" />
+      <change beforePath="$PROJECT_DIR$/json/musique.php" afterPath="$PROJECT_DIR$/json/musique.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,48 +31,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="118" column="44" lean-forward="true" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="44" />
+            <state relative-caret-position="432">
+              <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vegas.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/vegas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8646">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="175" column="32" lean-forward="false" selection-start-line="175" selection-start-column="32" selection-end-line="175" selection-end-column="32" />
+            <state relative-caret-position="819">
+              <caret line="201" column="34" lean-forward="true" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
               <folding>
-                <element signature="n#style#0;n#textarea#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="avisUtilisateurs.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/json/avisUtilisateurs.php">
+      <file leaf-file-name="LICENSE.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="avis.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/json/avis.php">
+      <file leaf-file-name="articles.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/articles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="37" selection-end-column="24" />
-              <folding>
-                <marker date="1520633166159" expanded="true" signature="452:532" ph="UPDATE musique... " />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="4" column="73" lean-forward="false" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,10 +88,34 @@
       <file leaf-file-name="ajoutArticle.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json/ajoutArticle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="621">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
-                <marker date="1521024178273" expanded="true" signature="429:509" ph="UPDATE musique... " />
+                <marker date="1521073244508" expanded="true" signature="689:827" ph="INSERT INTO `musique`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inscription.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json/inscription.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <folding>
+                <marker date="1520889154837" expanded="true" signature="616:700" ph="INSERT INTO utilisateur... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="musique.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json/musique.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+              <folding>
+                <marker date="1521071187283" expanded="true" signature="279:300" ph="SELECT * FRO... musique" />
               </folding>
             </state>
           </provider>
@@ -81,8 +124,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+            <state relative-caret-position="198">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -127,20 +170,20 @@
         <option value="$PROJECT_DIR$/json/fonctionBd.php" />
         <option value="$PROJECT_DIR$/json/est_connecte.php" />
         <option value="$PROJECT_DIR$/json/deconnexion.php" />
-        <option value="$PROJECT_DIR$/json/musique.php" />
-        <option value="$PROJECT_DIR$/json/avis.php" />
         <option value="$PROJECT_DIR$/js/particlebackground.js" />
         <option value="$PROJECT_DIR$/json/connexion.php" />
         <option value="$PROJECT_DIR$/json/inscription.php" />
         <option value="$PROJECT_DIR$/json/est_inscrit.php" />
-        <option value="$PROJECT_DIR$/js/articles.js" />
         <option value="$PROJECT_DIR$/js/plugins.js" />
         <option value="$PROJECT_DIR$/js/ihm.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/json/avisUtilisateurs.php" />
+        <option value="$PROJECT_DIR$/json/avis.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/json/musique.php" />
+        <option value="$PROJECT_DIR$/js/articles.js" />
         <option value="$PROJECT_DIR$/json/ajoutArticle.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -161,7 +204,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -183,6 +226,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,14 +248,27 @@
             <path>
               <item name="JSPROJET" type="b2602c69:ProjectViewProjectNode" />
               <item name="JSPROJET" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="JSPROJET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSPROJET" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="JSPROJET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSPROJET" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="json" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="JSPROJET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSPROJET" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vegas" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,6 +283,11 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Axel1\PhpstormProjects\JSPROJET\js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -275,7 +338,8 @@
       <workItem from="1520841587611" duration="15000" />
       <workItem from="1520843821139" duration="2106000" />
       <workItem from="1520979211450" duration="4983000" />
-      <workItem from="1521018816772" duration="6150000" />
+      <workItem from="1521018816772" duration="6233000" />
+      <workItem from="1521063546634" duration="10302000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <created>1519380293497</created>
@@ -585,22 +649,28 @@
       <option name="project" value="LOCAL" />
       <updated>1520985040033</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="style + utilsier vegas pr le background+ ajout d'article et note de l'article en fonction de l'ID&#10;&#10;&quot;Menu&quot; à coté de la maison">
+      <created>1521025227724</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1521025227725</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113174000" />
+    <option name="totallyTimeSpent" value="123559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10714286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108208954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33224043" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -646,7 +716,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout CSS" />
     <MESSAGE value="Push" />
     <MESSAGE value="Ajout php" />
     <MESSAGE value="Ajout JS" />
@@ -671,7 +740,8 @@
     <MESSAGE value="menu + style + faire une fonction pr afficher &#10;&#10;&#10;SCROLL FONCTIONNEL" />
     <MESSAGE value="menu + style + faire une fonction pr afficher &#10;&#10;&quot;Menu&quot; à coté de la maison + expliquer commment donner son avis + revoir ou mettre l'inscription + quand on est pas inscrit menu &quot;info&quot;" />
     <MESSAGE value="style + utilsier vegas pr le background&#10;&#10;&quot;Menu&quot; à coté de la maison + expliquer commment donner son avis + revoir ou mettre l'inscription + quand on est pas inscrit menu &quot;info&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="style + utilsier vegas pr le background&#10;&#10;&quot;Menu&quot; à coté de la maison + expliquer commment donner son avis + revoir ou mettre l'inscription + quand on est pas inscrit menu &quot;info&quot;" />
+    <MESSAGE value="style + utilsier vegas pr le background+ ajout d'article et note de l'article en fonction de l'ID&#10;&#10;&quot;Menu&quot; à coté de la maison" />
+    <option name="LAST_COMMIT_MESSAGE" value="style + utilsier vegas pr le background+ ajout d'article et note de l'article en fonction de l'ID&#10;&#10;&quot;Menu&quot; à coté de la maison" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -680,20 +750,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/json/est_connecte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/connexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="39" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -842,13 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json/musique.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/particlebackground.js" />
     <entry file="file://$PROJECT_DIR$/json/est_inscrit.php" />
     <entry file="file://$PROJECT_DIR$/json/connexion.php">
@@ -876,14 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/articles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -900,28 +941,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json/inscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <marker date="1520889154837" expanded="true" signature="616:700" ph="INSERT INTO utilisateur... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+        <state relative-caret-position="198">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="118" column="44" lean-forward="true" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="44" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -934,35 +965,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/json/inscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding>
+            <marker date="1520889154837" expanded="true" signature="616:700" ph="INSERT INTO utilisateur... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/json/avis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="37" selection-end-column="24" />
+        <state relative-caret-position="486">
+          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding>
-            <marker date="1520633166159" expanded="true" signature="452:532" ph="UPDATE musique... " />
+            <marker date="1521066796965" expanded="true" signature="440:505" ph="UPDATE musique... " />
+            <marker date="1521066796965" expanded="true" signature="440:516" ph="UPDATE musique... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/articles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="73" lean-forward="false" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/musique.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding>
+            <marker date="1521071187283" expanded="true" signature="279:300" ph="SELECT * FRO... musique" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/json/ajoutArticle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="621">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
-            <marker date="1521024178273" expanded="true" signature="429:509" ph="UPDATE musique... " />
+            <marker date="1521073244508" expanded="true" signature="689:827" ph="INSERT INTO `musique`... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="175" column="32" lean-forward="false" selection-start-line="175" selection-start-column="32" selection-end-line="175" selection-end-column="32" />
+        <state relative-caret-position="819">
+          <caret line="201" column="34" lean-forward="true" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
           <folding>
-            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/vegas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8646">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>

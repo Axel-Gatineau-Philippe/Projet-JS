@@ -9,6 +9,7 @@ html {
 
 
 .menu ul {
+    display: inline-block;
     float: left;
     background-color: #555555;
 }
@@ -75,6 +76,10 @@ ul.noteEtoile li.etoileCochee {
 }
 
 .avisVisiteurs{
+    display: none;
+}
+
+.ajoutArticle{
     display: none;
 }
 

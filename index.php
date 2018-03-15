@@ -45,146 +45,150 @@
 </nav>
 
 
-<div id="background">
-    <h1 style="display: none" id="titre1">eRated Music, le site qui laisse la parole aux fans de musique !</h1><br/>
+<h1 style="display: none" id="titre1">eRated Music, le site qui laisse la parole aux fans de musique !</h1><br/>
 
-    <p id="presentation">eRated Music propose à ses utilisateurs de noter les dernières sortie de musiques par type sur cinq étoiles,
-        avec la possibilité de laisser son avis.<br/>
-        Bonne visite !</p>
+<p id="presentation">eRated Music propose à ses utilisateurs de noter les dernières sortie de musiques par type sur cinq étoiles,
+    avec la possibilité de laisser son avis.<br/>
+    Bonne visite !</p>
 
-    <h3 style="display: none" id="titre-connexion">Authentifiez vous :</h3><br/>
+<h3 style="display: none" id="titre-connexion">Authentifiez vous :</h3><br/>
 
-    <form style="display:none; text-align: center;" id="form-connexion" method="post" action="json/connexion.php"><br/>
+<form style="display:none; text-align: center;" id="form-connexion" method="post" action="json/connexion.php"><br/>
+    <input type="text" name="mail" value="eMail" onfocus="this.value=''"/>
+    <br/>
+    <br/>
+    <input type="password" name="pass" value="Mot de passe" onfocus="this.value=''"/>
+    <br/>
+    <br/>
+    <input type="submit" value="Connexion" onclick=""/>
+    <br/>
+
+</form>
+
+<br/>
+
+
+<div class="inscription">
+    <form id="form-inscription" method="post" action="json/inscription.php">
+        <input type="text" name="prenom" value="Prénom" onfocus="this.value=''"/>
+        <br/>
+        <br/>
+        <input type="text" name="nom" value="Nom" onfocus="this.value=''"/>
+        <br/>
+        <br/>
         <input type="text" name="mail" value="eMail" onfocus="this.value=''"/>
         <br/>
         <br/>
         <input type="password" name="pass" value="Mot de passe" onfocus="this.value=''"/>
         <br/>
         <br/>
-        <input type="submit" value="Connexion" onclick=""/>
+        <input type="submit" value="Valider"/>
         <br/>
-
     </form>
-
-    <br/>
-
-
-    <div class="inscription">
-        <form id="form-inscription" method="post" action="json/inscription.php">
-            <input type="text" name="prenom" value="Prénom" onfocus="this.value=''"/>
-            <br/>
-            <br/>
-            <input type="text" name="nom" value="Nom" onfocus="this.value=''"/>
-            <br/>
-            <br/>
-            <input type="text" name="mail" value="eMail" onfocus="this.value=''"/>
-            <br/>
-            <br/>
-            <input type="password" name="pass" value="Mot de passe" onfocus="this.value=''"/>
-            <br/>
-            <br/>
-            <input type="submit" value="Valider"/>
-            <br/>
-        </form>
-    </div>
-
-    <br/>
-
-    <form style="display:none" class="affichFormAvisArticle">
-        <input type="button" value="Commenter et noter un article !" />
-    </form>
-    <br/>
-
-    <div class="musique">
-
-    </div>
-
-    <br/>
-    <div class="avisVisiteurs">
-        <p>eRated ne vous permet pas seulement de noter des musiques. Vous avez également la possibilité de noter le site !
-            N'hésitez pas laisser des remarques ou encore donner des suggestions !</p>
-        <form id="form-avis-visiteurs" method="post" action="json/avisUtilisateurs.php">
-            <input type="text" name="mail" value="eMail" onfocus="this.value=''">
-            <br/>
-            <label>Donnez votre avis sur le site :</label>
-            <br/>
-            <textarea style="width: auto" name="avisUtilisateur"></textarea>
-            <br/>
-            <input type="submit" value="Envoyer" />
-        </form>
-    </div>
-
-    <div class="avisArticles">
-        <form id="form-avis-articles" method="post" action="json/avis.php">
-            <label>Choisissez la catégorie de l'article que vous souhaitez noter :</label>
-            <select id="categorieChoisi" name="categorieChoisi">
-                <option value="Rap">Rap</option>
-                <option value="Rock">Rock</option>
-                <option value="HipHop">Hip Hop</option>
-                <option value="Humour">Humour</option>
-                <option value="Jazz">Jazz</option>
-                <option value="Reggaeton">Reggaeton</option>
-            </select>
-            <br/>
-            <ul class="noteEtoile">
-                <li class="etoileEteinte">
-                    <label for="note1">~</label>
-                    <input class="radioBut" type="radio" id="note1" value="1" name="note">
-                </li>
-                <li class="etoileEteinte">
-                    <label for="note2">~</label>
-                    <input class="radioBut" type="radio" id="note2" value="2" name="note">
-                </li>
-                <li class="etoileEteinte">
-                    <label for="note3">~</label>
-                    <input class="radioBut" type="radio" id="note3" value="3" name="note">
-                </li>
-                <li class="etoileEteinte">
-                    <label for="note4">~</label>
-                    <input class="radioBut" type="radio" id="note4" value="4" name="note">
-                </li>
-                <li class="etoileEteinte">
-                    <label for="note5">~</label>
-                    <input class="radioBut" type="radio" id="note5" value="5" name="note">
-                </li>
-            </ul>
-            <br/>
-            <label>Donnez votre avis sur l'article :</label>
-            <textarea style="width: auto" name="avisText" ></textarea>
-            <br/>
-            <input type="submit" value="Envoyer" />
-        </form>
-    </div>
-
-    <div class="ajoutArticle">
-        <form id="form-ajout-article" method="post" action="json/avis.php">
-            <label>Choisissez la catégorie de l'article que vous souhaitez ajouter ou mettre à jour :</label>
-            <select id="categorieAjout" name="categorieAjout">
-                <option value="Rap">Rap</option>
-                <option value="Rock">Rock</option>
-                <option value="HipHop">Hip Hop</option>
-                <option value="Humour">Humour</option>
-                <option value="Jazz">Jazz</option>
-                <option value="Reggaeton">Reggaeton</option>
-            </select>
-            <br/>
-            <label>Donnez une note sur cinq à l'article que vous souhaitez ajouter ou mettre à jour :</label>
-            <br/>
-            <select id="noteAjout" name="noteAjout">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <br/>
-            <label>Donnez votre avis sur l'article :</label>
-            <textarea style="width: auto" name="avisText" ></textarea>
-            <br/>
-            <input type="submit" value="Envoyer" />
-        </form>
-    </div>
 </div>
+
+<br/>
+
+<form style="display:none" class="affichFormAvisArticle">
+    <input type="button" value="Commenter et noter un article !" />
+</form>
+<br/>
+
+<div class="musique">
+
+</div>
+
+<br/>
+<div class="avisVisiteurs">
+    <p>eRated ne vous permet pas seulement de noter des musiques. Vous avez également la possibilité de noter le site !
+        N'hésitez pas laisser des remarques ou encore donner des suggestions !</p>
+    <form id="form-avis-visiteurs" method="post" action="json/avisUtilisateurs.php">
+        <input type="text" name="mail" value="eMail" onfocus="this.value=''">
+        <br/>
+        <label>Donnez votre avis sur le site :</label>
+        <br/>
+        <textarea style="width: auto" name="avisUtilisateur"></textarea>
+        <br/>
+        <input type="submit" value="Envoyer" />
+    </form>
+</div>
+
+<div class="avisArticles">
+    <form id="form-avis-articles" method="post" action="json/avis.php">
+        <label>Choisissez la catégorie de l'article que vous souhaitez noter :</label>
+        <select id="titreChoisi" name="titreChoisi">
+        </select>
+        <br/>
+        <ul class="noteEtoile">
+            <li class="etoileEteinte">
+                <label for="note1">~</label>
+                <input class="radioBut" type="radio" id="note1" value="1" name="note">
+            </li>
+            <li class="etoileEteinte">
+                <label for="note2">~</label>
+                <input class="radioBut" type="radio" id="note2" value="2" name="note">
+            </li>
+            <li class="etoileEteinte">
+                <label for="note3">~</label>
+                <input class="radioBut" type="radio" id="note3" value="3" name="note">
+            </li>
+            <li class="etoileEteinte">
+                <label for="note4">~</label>
+                <input class="radioBut" type="radio" id="note4" value="4" name="note">
+            </li>
+            <li class="etoileEteinte">
+                <label for="note5">~</label>
+                <input class="radioBut" type="radio" id="note5" value="5" name="note">
+            </li>
+        </ul>
+        <br/>
+        <label>Donnez votre avis sur l'article :</label>
+        <textarea style="width: auto" name="avisText" ></textarea>
+        <br/>
+        <input type="submit" value="Envoyer" />
+    </form>
+</div>
+
+<div class="ajoutArticle">
+    <form id="form-ajout-article" method="post" action="json/ajoutArticle.php">
+
+        <input type="text" name="titre" value="Titre" onfocus="this.value=''"/>
+        <br/>
+        <input type="text" name="artiste" value="Artiste" onfocus="this.value=''"/>
+        <br/>
+        <input type="text" name="annee" value="Année" onfocus="this.value=''"/>
+        <br/>
+        <label>Choisissez la catégorie de l'article que vous souhaitez ajouter  :</label>
+        <select id="genre" name="genre">
+            <option value="Rap">Rap</option>
+            <option value="Rock">Rock</option>
+            <option value="HipHop">Hip Hop</option>
+            <option value="Humour">Humour</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Reggaeton">Reggaeton</option>
+        </select>
+        <br/>
+        <label>Si vous l'avez, entrez le lien de l'image correspondant à la pochette de l'album :</label>
+        <br/>
+        <input type="text" name="pochette" value="Pochette" onfocus="this.value=''"/>
+        <br/>
+        <label>Donnez une note sur cinq à l'article que vous souhaitez ajouter :</label>
+        <br/>
+        <select id="noteAjout" name="noteAjout">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br/>
+        <label>Donnez votre avis sur l'article :</label>
+        <textarea style="width: auto" name="avisAjout" ></textarea>
+        <br/>
+        <input type="submit" value="Envoyer" />
+    </form>
+</div>
+
 
 
 
@@ -196,6 +200,7 @@
 <script src="js/ihm.js"></script>
 <script src="js/articles.js"></script>
 <script src="js/main.js"></script>
+<script src="vegas/vegas.js"></script>
 
 
 
