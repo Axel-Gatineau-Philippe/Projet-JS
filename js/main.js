@@ -50,13 +50,11 @@
 
     $('body').vegas({
         slides: [
-            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521074076-images-1.jpg' },
-            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521074076-images.jpg' },
-            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521074076-telechargement.jpg' }
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521075935-telechargement.jpg' },
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521075935-images.jpg' },
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521075935-images-1.jpg' }
         ]
-    })('overlay', {
-        src:'/vegas/overlays/11.png'
-    });;
+    });
 
     $(document).ready(function () {
 

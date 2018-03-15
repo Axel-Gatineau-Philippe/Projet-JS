@@ -12,6 +12,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/vegas/vegas.min.css">
 </head>
 <body>
 <!-- Add your site or application content here -->
@@ -193,14 +194,16 @@
 
 
 
-
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="js/vendor/jquery-3.2.1.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/ihm.js"></script>
 <script src="js/articles.js"></script>
+<script src="vegas/vegas.min.js"></script>
 <script src="js/main.js"></script>
-<script src="vegas/vegas.js"></script>
+
+
+
 
 
 
