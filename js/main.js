@@ -38,9 +38,9 @@
             console.log('musiques=' + musiques);
             for (let i = 0; i < musiques.liste.length; ++i) {
                 let musique = musiques.liste[i];
-                let articles = new Article(musique.titre, musique.artiste, musique.note, musique.genre, musique.pochette, musique.avis, musique.date);
+                let articles = new Article(musique.titre, musique.artiste, musique.note, musique.genre, musique.pochette, musique.avis, musique.annee);
 
-                $('#categorieChoisi').append(
+                $('#titreChoisi').append(
                     $('<option value="' + articles.titre + '" </option>').append(articles.titre)
                 )
             }
@@ -48,11 +48,13 @@
         return false;
     };
 
+
+    //Utilisation du plugin VEGASJS
     $('body').vegas({
         slides: [
-            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521075935-telechargement.jpg' },
-            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521075935-images.jpg' },
-            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521075935-images-1.jpg' }
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521107125-elegant-transparent-cyan-fabric-or-film-motion-background-4k-animation-rpqkjnqfl-thumbnail-full01.png' },
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521107125-110385.jpg' },
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521107125-images.jpg' }
         ]
     });
 
@@ -214,8 +216,8 @@
             });
             $('.affichFormAvisArticle').toggleClass("hide", function () {
 
-            })
-        })
+            });
+        });
 
         $('.affichAjoutArticle').click(function () {
             $('.ajoutArticle').toggleClass("show", function () {
@@ -229,7 +231,7 @@
             });
             $('.affichFormAvisArticle').toggleClass("hide", function () {
 
-            })
+            });
         })
     });
 

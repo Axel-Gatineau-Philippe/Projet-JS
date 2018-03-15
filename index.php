@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>eRated Music</title>
+    <meta name="author" content="Axel GATINEAU PHILIPPE">
+    <meta name="description" content="eRated">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" href="favicon.ico">
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/style.css">
@@ -48,11 +49,10 @@
 
 <h1 style="display: none" id="titre1">eRated Music, le site qui laisse la parole aux fans de musique !</h1><br/>
 
-<p id="presentation">eRated Music propose à ses utilisateurs de noter les dernières sortie de musiques par type sur cinq étoiles,
-    avec la possibilité de laisser son avis.<br/>
+<p id="presentation">eRated Music vous propose de noter différents titre de musique, avec la possibilité de laisser votre avis, mais également d'ajouter de nouveaux titres de votre choix.<br/>
     Bonne visite !</p>
 
-<h3 style="display: none" id="titre-connexion">Authentifiez vous :</h3><br/>
+<h3 style="display: none" id="titre-connexion">Authentifiez vous :</h3>
 
 <form style="display:none; text-align: center;" id="form-connexion" method="post" action="json/connexion.php"><br/>
     <input type="text" name="mail" value="eMail" onfocus="this.value=''"/>
@@ -70,6 +70,7 @@
 
 
 <div class="inscription">
+    <h3 >Entrez vos informations personnelles :</h3>
     <form id="form-inscription" method="post" action="json/inscription.php">
         <input type="text" name="prenom" value="Prénom" onfocus="this.value=''"/>
         <br/>
@@ -91,7 +92,7 @@
 <br/>
 
 <form style="display:none" class="affichFormAvisArticle">
-    <input type="button" value="Commenter et noter un article !" />
+    <input type="button" value="Commenter et noter un article" />
 </form>
 <br/>
 
@@ -102,11 +103,13 @@
 <br/>
 <div class="avisVisiteurs">
     <p>eRated ne vous permet pas seulement de noter des musiques. Vous avez également la possibilité de noter le site !
-        N'hésitez pas laisser des remarques ou encore donner des suggestions !</p>
+        N'hésitez pas laisser des remarques ou encore donner des suggestions !</p><br/>
     <form id="form-avis-visiteurs" method="post" action="json/avisUtilisateurs.php">
         <input type="text" name="mail" value="eMail" onfocus="this.value=''">
         <br/>
+        <br/>
         <label>Donnez votre avis sur le site :</label>
+        <br/>
         <br/>
         <textarea style="width: auto" name="avisUtilisateur"></textarea>
         <br/>
@@ -115,10 +118,15 @@
 </div>
 
 <div class="avisArticles">
+    <p>Donnez votre avis sur l'article de votre choix en le sélectionnant dans la liste ci-dessous :</p>
+    <br/>
+    <br/>
     <form id="form-avis-articles" method="post" action="json/avis.php">
         <label>Choisissez la catégorie de l'article que vous souhaitez noter :</label>
+        <br/>
         <select id="titreChoisi" name="titreChoisi">
         </select>
+        <br/>
         <br/>
         <ul class="noteEtoile">
             <li class="etoileEteinte">
@@ -143,7 +151,10 @@
             </li>
         </ul>
         <br/>
+        <br/>
         <label>Donnez votre avis sur l'article :</label>
+        <br/>
+        <br/>
         <textarea style="width: auto" name="avisText" ></textarea>
         <br/>
         <input type="submit" value="Envoyer" />
@@ -151,13 +162,18 @@
 </div>
 
 <div class="ajoutArticle">
-    <form id="form-ajout-article" method="post" action="json/ajoutArticle.php">
 
+    <p>Remplissez les informations ci-dessous afin d'ajouter un nouvel article : </p>
+    <br/>
+    <form id="form-ajout-article" method="post" action="json/ajoutArticle.php">
         <input type="text" name="titre" value="Titre" onfocus="this.value=''"/>
+        <br/>
         <br/>
         <input type="text" name="artiste" value="Artiste" onfocus="this.value=''"/>
         <br/>
+        <br/>
         <input type="text" name="annee" value="Année" onfocus="this.value=''"/>
+        <br/>
         <br/>
         <label>Choisissez la catégorie de l'article que vous souhaitez ajouter  :</label>
         <select id="genre" name="genre">
@@ -169,11 +185,15 @@
             <option value="Reggaeton">Reggaeton</option>
         </select>
         <br/>
+        <br/>
         <label>Si vous l'avez, entrez le lien de l'image correspondant à la pochette de l'album :</label>
+        <br/>
         <br/>
         <input type="text" name="pochette" value="Pochette" onfocus="this.value=''"/>
         <br/>
+        <br/>
         <label>Donnez une note sur cinq à l'article que vous souhaitez ajouter :</label>
+        <br/>
         <br/>
         <select id="noteAjout" name="noteAjout">
             <option value="1">1</option>
@@ -183,7 +203,10 @@
             <option value="5">5</option>
         </select>
         <br/>
+        <br/>
         <label>Donnez votre avis sur l'article :</label>
+        <br/>
+        <br/>
         <textarea style="width: auto" name="avisAjout" ></textarea>
         <br/>
         <input type="submit" value="Envoyer" />
