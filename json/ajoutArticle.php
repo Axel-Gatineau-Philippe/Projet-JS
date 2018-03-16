@@ -17,8 +17,7 @@ $ajout->message = '';
 
 
 if(isset($_POST['artiste']) && isset($_POST['titre']) && isset($_POST['genre'])
-    && isset($_POST['annee']) && isset($_POST['pochette'])
-    && isset($_POST['noteAjout']) && isset($_POST['avisAjout'])){
+    && isset($_POST['annee']) && isset($_POST['noteAjout']) && isset($_POST['avisAjout'])){
 
     $titre = $_POST['titre'];
     $artiste = $_POST['artiste'];

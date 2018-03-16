@@ -30,6 +30,114 @@
         return false;
     };
 
+    let creerFormConnexion = function () {
+        $('#form-connexion').append($('<br/>'))
+            .append($('<input type="text" name="mail" placeholder="eMail"/>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<input type="password" name="pass" placeholder="Mot de passe" />'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<input type="submit" value="Connexion"/>'))
+            .append($('<br/>'))
+    };
+
+    let creerFormInscription = function () {
+        $('#form-inscription').append($('<h3 >Entrez vos informations personnelles :</h3>'))
+            .append($('<br/>'))
+            .append($('<input type="text" name="prenom" placeholder="Prénom"/>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<input type="text" name="nom" placeholder="Nom"/>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<input type="text" name="mail" placeholder="eMail"/>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<input type="password" name="pass" placeholder="Mot de passe"/>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<input type="submit" value="Valider"/>'))
+            .append($('<br/>'))
+    };
+
+    let creerFormAvisVisiteur = function () {
+        $('#divAvisArticle').append($('<p>eRated ne vous permet pas seulement de noter des musiques. Vous avez également la possibilité de noter le site !. N\'hésitez pas laisser des remarques ou encore donner des suggestions !</p>'))
+            .append($('<br/>'))
+            .append($('<input type="text" name="mail" placeholder="eMail"/>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<label>Donnez votre avis sur le site :</label>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<textarea style="width: auto" name="avisUtilisateur"></textarea>'))
+            .append($('<br/>'))
+            .append($('<input type="submit" value="Envoyer" />'))
+
+    };
+
+    let creerFormAvisArticle = function () {
+        $('#form-avis-articles').append($('<label> Choisissez le titre que vous souhaitez noter :</label>'))
+            .append($('<br/>'))
+            .append($('<select id="titreChoisi" name="titreChoisi"></select>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<label>Donnez votre avis sur l\'article :</label>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<textarea style="width: auto" name="avisText" ></textarea>'))
+            .append($('<br/>'))
+            .append($('<input type="submit" value="Envoyer" />'))
+    };
+
+    let creerFormAjoutArticle = function () {
+        $('#form-ajout-article').append($('<p>Remplissez les informations ci-dessous afin d\'ajouter un nouvel article : </p>'))
+            .append($('<br/>'))
+            .append($('<input type="text" name="titre" placeholder="Titre"/>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<input type="text" name="artiste" placeholder="Artiste"/>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<input type="text" name="annee" placeholder="Année"/>'))
+            .append($(' <br/>'))
+            .append($('<br/>'))
+            .append($('<label>Choisissez la catégorie de l\'article que vous souhaitez ajouter  :</label>'))
+            .append($('<br/>'))
+            .append($('<select id="genre" name="genre" </select>')
+                .append($('<option value="Rap">Rap</option>'))
+                .append($('<option value="Rock">Rock</option>'))
+                .append($('<option value="HipHop">Hip Hop</option>'))
+                .append($('<option value="Humour">Humour</option>'))
+                .append($('<option value="Jazz">Jazz</option>'))
+                .append($('<option value="Reggaeton">Reggaeton</option>')))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<label>Si vous l\'avez, entrez le lien de l\'image correspondant à la pochette de l\'album :</label>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<input type="text" name="pochette" placeholder="Pochette"/>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<label>Donnez une note sur cinq à l\'article que vous souhaitez ajouter :</label>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($(' <select id="noteAjout" name="noteAjout" </select>')
+                .append($('<option value="1">1</option>'))
+                .append($('<option value="2">2</option>'))
+                .append($('<option value="3">3</option>'))
+                .append($('<option value="4">4</option>'))
+                .append($('<option value="5">5</option>')))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<label>Donnez votre avis sur l\'article :</label>'))
+            .append($('<br/>'))
+            .append($('<br/>'))
+            .append($('<textarea style="width: auto" name="avisAjout" ></textarea>'))
+            .append($('<br/>'))
+            .append($('<input type="submit" value="Envoyer" />'))
+    };
+
     let afficherArticlesNotation = function () {
         $.ajax({
             'url': '/json/musique.php'
@@ -65,8 +173,8 @@
         }).done(function (data) {
             if (data.est_connecte) {
                 $('#form-deconnexion').fadeIn();
-                $('.musique').fadeIn();
                 afficherArticles();
+                $('.musique').fadeIn();
                 $('.affichFormAvisVisiteur').fadeIn();
                 $('.affichFormAvisArticle').fadeIn();
                 $('#form-avis-articles').fadeIn();
@@ -75,6 +183,7 @@
                 $('#form-ajout-article').fadeIn();
             }
             else {
+                creerFormConnexion();
                 $('#presentation').fadeIn();
                 $('#titre1').fadeIn();
                 $('#titre-connexion').fadeIn();
@@ -181,6 +290,7 @@
 
 
         $('.affichFormInsc').click(function () {
+            creerFormInscription();
             $('.inscription').toggleClass("show", function () {
 
             });
@@ -191,6 +301,7 @@
         });
 
         $('.affichFormAvisArticle').click(function () {
+            creerFormAvisArticle();
             afficherArticlesNotation();
             $('.avisArticles').toggleClass("show", function () {
 
@@ -205,6 +316,7 @@
         });
 
         $('.affichFormAvisVisiteur').click(function () {
+            creerFormAvisVisiteur();
             $('.avisVisiteurs').toggleClass("show", function () {
 
             });
@@ -220,6 +332,7 @@
         });
 
         $('.affichAjoutArticle').click(function () {
+            creerFormAjoutArticle();
             $('.ajoutArticle').toggleClass("show", function () {
 
             });
