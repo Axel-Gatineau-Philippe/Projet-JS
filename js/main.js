@@ -25,25 +25,31 @@
                             'font-weight' : 'bold'
                         }),
                     $('<div />').append(articles.pochette),
-                    $('<h2 </h2>').append(articles.titre)
+                    $('<div />').append(
+                        $('<h2 </h2>').append(articles.titre)
+                            .css({
+                                'font-size' : '50px',
+                                'font-weight' : 'bold',
+                                'font-style' : 'italic'
+                            }),
+                        $('<div />').append($('<h3 </h3>')
+                            .append('Artiste :')
+                            .append($('<h5 </h5>')
+                                .append(articles.artiste))),
+                        $('<div />').append($('<h3 </h3>')
+                            .append('Année de sortie : '))
+                            .append(articles.annee),
+                        $('<div />').append($('<h3 </h3>')
+                            .append('Note : '))
+                            .append(articles.note +'/5'),
+                        $('<div />').append($('<h3 </h3>')
+                            .append('Dernier avis posté : '))
+                            .append(articles.avis))
                         .css({
-                            'font-size' : '50px',
-                            'font-weight' : 'bold',
-                            'font-style' : 'italic'
-                        }),
-                    $('<div />').append($('<h3 </h3>')
-                        .append('Artiste :')
-                        .append($('<h5 </h5>')
-                            .append(articles.artiste))),
-                    $('<div />').append($('<h3 </h3>')
-                        .append('Année de sortie : '))
-                        .append(articles.annee),
-                    $('<div />').append($('<h3 </h3>')
-                        .append('Note : '))
-                        .append(articles.note +'/5'),
-                    $('<div />').append($('<h3 </h3>')
-                        .append('Dernier avis posté : '))
-                        .append(articles.avis)
+                            'background-color':'#dcd7e1',
+                            'border-radius' : '8px',
+                            'padding-botom' : '4px'
+                        })
 
                 )
             }
@@ -184,6 +190,7 @@
         return false;
     };
 
+
     $(document).ready(function () {
 
         //Appel Ajax permettant de savoir si l'utilisateur est connecté
@@ -202,6 +209,7 @@
                 $('#form-avis-visiteurs').slideDown(1000);
                 $('.affichAjoutArticle').fadeIn(1000);
                 $('#form-ajout-article').slideDown(1000);
+                $('.afficherSelonGenre').slideDown(1000);
             }
             else {
                 creerFormInscription();
@@ -353,6 +361,7 @@
             $('.retour').fadeIn(1000);
             $('.affichFormAvisArticle').slideUp(1000);
         });
+
 
         //Pour la notation sous forme d'étoile, je me suis aidé d'internet afin d'utiliser différentes techniques (notamment l'utilisation d'un sprite). Bien entendu, le code n'a pas été copié collé
         //JQuery permettant aux étoiles d'être illuminées lors du survol
