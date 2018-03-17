@@ -1,3 +1,5 @@
+//Classe qui permet la création d'articles sous forme d'objets afin de rendre le code plus propre
+
 let Article;
 (function () {
     "use-strict";

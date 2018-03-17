@@ -21,6 +21,7 @@ html {
     height: 30px;
     float: left;
 }
+
 .menu li {
     text-align: center;
     display: inline-block;
@@ -67,7 +68,6 @@ p{
 ul.noteEtoile {
     margin: 0;
     padding: 0;
-
 }
 
 ul.noteEtoile li{
@@ -90,11 +90,6 @@ ul.noteEtoile li label {
 ul.noteEtoile li.etoileEteinte label {
     background-position: center -60px;
 }
-
-ul.noteEtoile li.etoileCochee {
-    font-weight: bold;
-}
-
 
 .radioBut{
     position: absolute;
