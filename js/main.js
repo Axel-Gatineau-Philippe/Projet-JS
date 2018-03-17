@@ -1,6 +1,15 @@
 (function() {
     "use strict";
 
+    //Utilisation du plugin VEGASJS
+    $('body').vegas({
+        slides: [
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521107125-elegant-transparent-cyan-fabric-or-film-motion-background-4k-animation-rpqkjnqfl-thumbnail-full01.png' },
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521107125-110385.jpg' },
+            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521107125-images.jpg' }
+        ]
+    });
+
     let erreurCritique = function () {
         $('body').html('Erreur !<br/>' + 'Veuillez contacter <br/>' + "axel13" + "10.p" + "@" + (true ? 'gmail': '') + ".com" + ' si le problème persiste.');
     };
@@ -16,7 +25,11 @@
                 let articles = new Article(musique.titre, musique.artiste, musique.note, musique.genre, musique.pochette, musique.avis, musique.annee);
 
                 $('.musique').append(
-                    $('<h1 <h1/>').append(articles.genre),
+                    $('<h1 <h1/>').append(articles.genre)
+                        .css({
+                            'font-size' : 'large',
+                            'font-style' : 'italic'
+                        }),
                     $('<div />').append(articles.pochette),
                     $('<h3 </h3>').append(articles.titre),
                     $('<h5 </h5>').append(articles.artiste),
@@ -156,39 +169,28 @@
         return false;
     };
 
-
-    //Utilisation du plugin VEGASJS
-    $('body').vegas({
-        slides: [
-            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521107125-elegant-transparent-cyan-fabric-or-film-motion-background-4k-animation-rpqkjnqfl-thumbnail-full01.png' },
-            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521107125-110385.jpg' },
-            { src: 'https://image.noelshack.com/fichiers/2018/11/4/1521107125-images.jpg' }
-        ]
-    });
-
     $(document).ready(function () {
 
         $.ajax({
             'url': '/json/est_connecte.php'
         }).done(function (data) {
             if (data.est_connecte) {
-                $('#form-deconnexion').fadeIn();
+                $('#form-deconnexion').fadeIn(1000);
                 afficherArticles();
-                $('.musique').fadeIn();
-                $('.affichFormAvisVisiteur').fadeIn();
-                $('.affichFormAvisArticle').fadeIn();
-                $('#form-avis-articles').fadeIn();
-                $('#form-avis-visiteurs').fadeIn();
-                $('.affichAjoutArticle').fadeIn();
-                $('#form-ajout-article').fadeIn();
+                $('.musique').slideDown(1000);
+                $('.affichFormAvisVisiteur').fadeIn(1000);
+                $('.affichFormAvisArticle').fadeIn(1000);
+                $('#form-avis-articles').slideDown(1000);
+                $('#form-avis-visiteurs').slideDown(1000);
+                $('.affichAjoutArticle').fadeIn(1000);
+                $('#form-ajout-article').slideDown(1000);
             }
             else {
                 creerFormConnexion();
-                $('#presentation').fadeIn();
-                $('#titre1').fadeIn();
-                $('#titre-connexion').fadeIn();
+                $('#presentation').slideDown(1000);
+                $('#titre-connexion').slideDown(1000);
                 $('#form-connexion').slideDown(1000);
-                $('.affichFormInsc').slideDown(1000);
+                $('.affichFormInsc').fadeIn(1000);
 
 
             }
@@ -303,48 +305,26 @@
         $('.affichFormAvisArticle').click(function () {
             creerFormAvisArticle();
             afficherArticlesNotation();
-            $('.avisArticles').toggleClass("show", function () {
+            $('.avisArticles').slideDown(1000);
 
-            });
-
-            $('.musique').toggleClass("hide", function () {
-
-            });
-            $('.retour').toggleClass("show", function () {
-
-            });
+            $('.musique').slideUp(1000);
+            $('.retour').fadeIn(1000);
         });
 
         $('.affichFormAvisVisiteur').click(function () {
             creerFormAvisVisiteur();
-            $('.avisVisiteurs').toggleClass("show", function () {
-
-            });
-            $('.musique').toggleClass("hide", function () {
-
-            });
-            $('.retour').toggleClass("show", function () {
-
-            });
-            $('.affichFormAvisArticle').toggleClass("hide", function () {
-
-            });
+            $('.avisVisiteurs').slideDown(1000);
+            $('.musique').slideUp(1000);
+            $('.retour').fadeIn(1000);
+            $('.affichFormAvisArticle').slideUp(1000);
         });
 
         $('.affichAjoutArticle').click(function () {
             creerFormAjoutArticle();
-            $('.ajoutArticle').toggleClass("show", function () {
-
-            });
-            $('.musique').toggleClass("hide", function () {
-
-            });
-            $('.retour').toggleClass("show", function () {
-
-            });
-            $('.affichFormAvisArticle').toggleClass("hide", function () {
-
-            });
+            $('.ajoutArticle').slideDown(1000);
+            $('.musique').slideUp(1000);
+            $('.retour').fadeIn(1000);
+            $('.affichFormAvisArticle').slideUp(1000);
         })
     });
 

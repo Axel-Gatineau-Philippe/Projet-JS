@@ -24,7 +24,7 @@
 
 
         $('#home').mouseover(function () {
-            $('.menu').fadeIn(100);
+            $('.menu').slideDown(1000);
         })
     });
 
