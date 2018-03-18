@@ -49,7 +49,7 @@
         <br/>
         <br/>
         <h1 id="titre1">eRated Music, le site qui laisse la parole aux fans de musique !</h1><br/>
-        <p id="presentation">eRated Music vous propose de noter différents titre de musique, avec la possibilité de laisser votre avis, mais également d'ajouter de nouveaux titres de votre choix.<br/>
+        <p id="presentation">eRated Music vous propose de noter différents titres de musique, avec la possibilité de laisser votre avis, mais également d'ajouter de nouveaux titres de votre choix.<br/>
             Bonne visite !</p>
 
         <h3 style="display: none" id="titre-connexion">Authentifiez vous :</h3>

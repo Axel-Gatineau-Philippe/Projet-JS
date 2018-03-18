@@ -347,6 +347,9 @@
             $('.hautpage').fadeOut(1000);
             $('#form-avis-visiteurs').slideUp(1000);
             $('#form-ajout-article').slideUp(1000);
+            $('.affichFormAvisArticle').slideUp(1000);
+            $('.affichAjoutArticle').slideUp(1000);
+            $('.affichFormAvisVisiteur').slideUp(1000);
         });
 
         //Bouton qui permet d'afficher le formulaire qui permet de donner son avis sur le site lorsque l'on clique dessus
@@ -356,6 +359,8 @@
             $('.musique').slideUp(1000);
             $('.retour').fadeIn(1000);
             $('.affichFormAvisArticle').slideUp(1000);
+            $('.affichAjoutArticle').slideUp(1000);
+            $('.affichFormAvisVisiteur').slideUp(1000);
             $('#form-ajout-article').slideUp(1000);
             $('.hautpage').fadeOut(1000);
         });
@@ -369,6 +374,8 @@
             $('#form-avis-articles').slideUp(1000);
             $('#form-avis-visiteurs').slideUp(1000);
             $('.affichFormAvisArticle').slideUp(1000);
+            $('.affichAjoutArticle').slideUp(1000);
+            $('.affichFormAvisVisiteur').slideUp(1000);
             $('.hautpage').fadeOut(1000);
         });
 
