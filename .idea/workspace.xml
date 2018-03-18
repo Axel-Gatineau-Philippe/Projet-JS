@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a5239127-aa9c-47ac-a583-e989e1b29d1e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/json/inscription.php" afterPath="$PROJECT_DIR$/json/inscription.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,12 +18,24 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="237" column="49" lean-forward="false" selection-start-line="237" selection-start-column="49" selection-end-line="237" selection-end-column="49" />
+            <state relative-caret-position="-643">
+              <caret line="347" column="35" lean-forward="false" selection-start-line="347" selection-start-column="35" selection-end-line="347" selection-end-column="35" />
               <folding>
-                <marker date="1521386646176" expanded="true" signature="4827:4838" ph="..." />
-                <marker date="1521386646176" expanded="true" signature="5632:5643" ph="..." />
-                <marker date="1521386646176" expanded="true" signature="8332:8343" ph="..." />
+                <marker date="1521401933696" expanded="true" signature="4827:4838" ph="..." />
+                <marker date="1521401933696" expanded="true" signature="5632:5643" ph="..." />
+                <marker date="1521401933696" expanded="true" signature="8332:8343" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inscription.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json/inscription.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+              <folding>
+                <marker date="1521401174852" expanded="true" signature="698:782" ph="INSERT INTO utilisateur... " />
               </folding>
             </state>
           </provider>
@@ -33,11 +44,9 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
+            <state relative-caret-position="2034">
               <caret line="113" column="13" lean-forward="false" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,8 +64,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-630">
-              <caret line="69" column="1" lean-forward="true" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+            <state relative-caret-position="1242">
+              <caret line="69" column="1" lean-forward="false" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -65,8 +74,8 @@
       <file leaf-file-name="ajoutArticle.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json/ajoutArticle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="54" />
+            <state relative-caret-position="540">
+              <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
               <folding>
                 <marker date="1521238439763" expanded="true" signature="656:794" ph="INSERT INTO `musique`... " />
               </folding>
@@ -127,7 +136,6 @@
         <option value="$PROJECT_DIR$/json/deconnexion.php" />
         <option value="$PROJECT_DIR$/js/particlebackground.js" />
         <option value="$PROJECT_DIR$/json/connexion.php" />
-        <option value="$PROJECT_DIR$/json/inscription.php" />
         <option value="$PROJECT_DIR$/json/est_inscrit.php" />
         <option value="$PROJECT_DIR$/js/plugins.js" />
         <option value="$PROJECT_DIR$/json/avisUtilisateurs.php" />
@@ -139,6 +147,7 @@
         <option value="$PROJECT_DIR$/json/affichesArticleSpec.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/json/inscription.php" />
         <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
@@ -182,6 +191,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,8 +224,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,14 +300,8 @@
       <workItem from="1521232944106" duration="11137000" />
       <workItem from="1521287263004" duration="5531000" />
       <workItem from="1521294016735" duration="6343000" />
-      <workItem from="1521384338728" duration="2313000" />
-    </task>
-    <task id="LOCAL-00003" summary="Ajout CSS">
-      <created>1519382148352</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1519382148352</updated>
+      <workItem from="1521384338728" duration="2400000" />
+      <workItem from="1521400939670" duration="1283000" />
     </task>
     <task id="LOCAL-00004" summary="Push">
       <created>1519383921844</created>
@@ -636,17 +639,23 @@
       <option name="project" value="LOCAL" />
       <updated>1521301607000</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Terminé">
+      <created>1521386665922</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1521386665922</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154544000" />
+    <option name="totallyTimeSpent" value="155914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11353944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114605546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -697,7 +706,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Hide fonctionnel" />
     <MESSAGE value="Show&#10; fonctionnel" />
     <MESSAGE value="Inscription" />
     <MESSAGE value="Inscription afficher cacher" />
@@ -722,7 +730,8 @@
     <MESSAGE value="style &#10;&quot;Menu&quot; à coté de la maison" />
     <MESSAGE value="Jquery Dynamique" />
     <MESSAGE value="Faire bouton haut de page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Faire bouton haut de page" />
+    <MESSAGE value="Terminé" />
+    <option name="LAST_COMMIT_MESSAGE" value="Terminé" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -736,9 +745,9 @@
         <state relative-caret-position="340">
           <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
-            <marker date="1521386646176" expanded="true" signature="4827:4838" ph="..." />
-            <marker date="1521386646176" expanded="true" signature="5632:5643" ph="..." />
-            <marker date="1521386646176" expanded="true" signature="8332:8343" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="4827:4838" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="5632:5643" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="8332:8343" ph="..." />
           </folding>
         </state>
       </provider>
@@ -796,9 +805,9 @@
         <state relative-caret-position="252">
           <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
           <folding>
-            <marker date="1521386646176" expanded="true" signature="4827:4838" ph="..." />
-            <marker date="1521386646176" expanded="true" signature="5632:5643" ph="..." />
-            <marker date="1521386646176" expanded="true" signature="8332:8343" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="4827:4838" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="5632:5643" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="8332:8343" ph="..." />
           </folding>
         </state>
       </provider>
@@ -834,9 +843,9 @@
         <state relative-caret-position="198">
           <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
           <folding>
-            <marker date="1521386646176" expanded="true" signature="4827:4838" ph="..." />
-            <marker date="1521386646176" expanded="true" signature="5632:5643" ph="..." />
-            <marker date="1521386646176" expanded="true" signature="8332:8343" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="4827:4838" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="5632:5643" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="8332:8343" ph="..." />
           </folding>
         </state>
       </provider>
@@ -913,7 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,13 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/inscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -953,16 +954,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ihm.js" />
-    <entry file="file://$PROJECT_DIR$/json/ajoutArticle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="54" />
-          <folding>
-            <marker date="1521238439763" expanded="true" signature="656:794" ph="INSERT INTO `musique`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/json/musique.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -984,30 +975,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
-          <caret line="69" column="1" lean-forward="true" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+        <state relative-caret-position="1242">
+          <caret line="69" column="1" lean-forward="false" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
+        <state relative-caret-position="2034">
           <caret line="113" column="13" lean-forward="false" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/inscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1521401174852" expanded="true" signature="698:782" ph="INSERT INTO utilisateur... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/ajoutArticle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <marker date="1521238439763" expanded="true" signature="656:794" ph="INSERT INTO `musique`... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="237" column="49" lean-forward="false" selection-start-line="237" selection-start-column="49" selection-end-line="237" selection-end-column="49" />
+        <state relative-caret-position="-643">
+          <caret line="347" column="35" lean-forward="false" selection-start-line="347" selection-start-column="35" selection-end-line="347" selection-end-column="35" />
           <folding>
-            <marker date="1521386646176" expanded="true" signature="4827:4838" ph="..." />
-            <marker date="1521386646176" expanded="true" signature="5632:5643" ph="..." />
-            <marker date="1521386646176" expanded="true" signature="8332:8343" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="4827:4838" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="5632:5643" ph="..." />
+            <marker date="1521401933696" expanded="true" signature="8332:8343" ph="..." />
           </folding>
         </state>
       </provider>

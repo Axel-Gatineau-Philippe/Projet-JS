@@ -15,7 +15,11 @@ $data->result = true;
 $data->message = '';
 
 
-if(isset($_POST['nom']) || isset($_POST['prenom']) || isset($_POST['pass']) || isset($_POST['mail'])) {
+if(empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['pass']) || empty($_POST['mail'])) {
+    $data->result = false;
+    $data->message = 'Paramètres incorrects';
+}
+else {
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
     $pass = md5($_POST['pass']);
@@ -38,11 +42,6 @@ if(isset($_POST['nom']) || isset($_POST['prenom']) || isset($_POST['pass']) || i
 
         //Faire fonction qui confirme l'inscription avec envoi de mail + les messages qui s'affichent.
     }
-
-}
-else {
-    $data->result = false;
-    $data->message = 'Paramètres incorrects';
 
 }
 
