@@ -108,7 +108,7 @@
 
     //Fonction permettant de creer le formulaire permettant de laisser son avis sur les article en dynamique
     let creerFormAvisArticle = function () {
-        $('#form-avis-articles').append($('<label> Choisissez le titre que vous souhaitez noter :</label>'))
+        $('#divAvisArticle').append($('<label> Choisissez le titre que vous souhaitez noter :</label>'))
             .append($('<br/>'))
             .append($('<br/>'))
             .append($('<select id="titreChoisi" name="titreChoisi"></select>'))
@@ -202,6 +202,7 @@
                 $('#home').fadeIn(1000);
                 $('#fleche').fadeIn(1000);
                 afficherArticles();
+                $('.hautpage').slideDown(1000);
                 $('.musique').slideDown(1000);
                 $('.affichFormAvisVisiteur').fadeIn(1000);
                 $('.affichFormAvisArticle').fadeIn(1000);
@@ -342,6 +343,7 @@
             $('.avisArticles').slideDown(1000);
             $('.musique').slideUp(1000);
             $('.retour').fadeIn(1000);
+            $('.hautpage').fadeOut(1000);
         });
 
         //Bouton qui permet d'afficher le formulaire qui permet de donner son avis sur le site lorsque l'on clique dessus
@@ -351,6 +353,7 @@
             $('.musique').slideUp(1000);
             $('.retour').fadeIn(1000);
             $('.affichFormAvisArticle').slideUp(1000);
+            $('.hautpage').fadeOut(1000);
         });
 
         //Bouton qui permet d'afficher le formulaire d'ajout d'article lorsque l'on clique dessus
@@ -360,6 +363,7 @@
             $('.musique').slideUp(1000);
             $('.retour').fadeIn(1000);
             $('.affichFormAvisArticle').slideUp(1000);
+            $('.hautpage').fadeOut(1000);
         });
 
 

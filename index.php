@@ -103,9 +103,23 @@
                     </li>
                 </ul>
                 <br/>
-                <div id="divAvisArticle"</div>
+                <div id="divAvisArticle">
+
+                </div>
             </form>
         </div>
+        <br/>
+        <button class="hautpage" onclick="$('html, body').animate({scrollTop: 0},'slow');" value="Haut de la page">Haut de la page</button>
+        <br/>
+        <br/>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                     src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                     alt="CSS Valide !" />
+            </a>
+            <p>© Tous droits réservés 2018 eRated Music</p>
+        </p>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/vendor/jquery-3.2.1.min.js"></script>
